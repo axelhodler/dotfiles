@@ -28,6 +28,8 @@ TEXT
   {"full_text": " ~ [$entropy_bar] ", "color":"\#AFB500"},
 #Shows upime
   {"full_text": " ↑ [${uptime}] ","color": "\#dc322f"},
+#Show weather
+  {"full_text": " Stuttgart: ${execi 300 /home/xorrr/dotfiles/scripts/weather.sh 'EUR|DE|GM001|Stuttgart'}"},
 #Shows time
   {"full_text": " [${time %a %d %b} ${time %H:%M:%S}] ","color": "\#2fdc57"}
 ]
