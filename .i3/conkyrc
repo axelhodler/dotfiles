@@ -11,11 +11,7 @@ override_utf8_locale yes
 TEXT
 ,[
 #Music
-  {"full_text": " ♪ [${mpd_title} - ${mpd_artist} (${mpd_album})]"},
-#Shows current user
-  {"full_text": " ☻ [${exec whoami}] ", "color":"\#ff00f3"},
-#Shows hostname (heart for lack of better symbol)
-  {"full_text": " ♥ [${exec hostname}] ", "color":"\#6F3BFF"},
+  {"full_text": " ♪ [${mpd_artist} - ${mpd_title}]"},
 #Shows uploadspeed
   {"full_text": " ▲ [${upspeed}] ", "color":"\#ff0000"},
 #Shows downloadspeed
@@ -24,10 +20,6 @@ TEXT
   {"full_text": " || [$membar] ", "color":"\#B58900"},
 #Shows current CPU usage with a bar
   {"full_text": " ■ [$cpubar] ", "color":"\#00A9B5"},
-#Bar showing available entropy. Install haveged if you want this to rocket up. Without, /proc/sys/kernel/random/entropy_avail reported on my sysem ~175. With, it reported ~3585
-  {"full_text": " ~ [$entropy_bar] ", "color":"\#AFB500"},
-#Shows upime
-  {"full_text": " ↑ [${uptime}] ","color": "\#dc322f"},
 #Show weather
   {"full_text": " Stuttgart: ${execi 300 /home/xorrr/dotfiles/scripts/weather.sh 'EUR|DE|GM001|Stuttgart'}"},
 #Shows time
