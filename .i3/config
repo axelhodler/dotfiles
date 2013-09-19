@@ -147,16 +147,4 @@ bindsym $mod+r mode "resize"
 bar {
         position top
         status_command ~/.i3/conky
-
-        colors {
-               background #cccccc
-               statusline #ffffff
-               separator #666666
-
-               # class            border  backgr. text    
-               focused_workspace  #cccccc #3d3d3d #ffffff
-               active_workspace   #cccccc #cccccc #000000
-               inactive_workspace #cccccc #cccccc #000000
-               urgent_workspace   #ff0000 #000000 #ff0000
-        }
 }
