@@ -1,0 +1,25 @@
+background        no
+out_to_console      yes
+out_to_x              no
+update_interval         1
+short_units               yes
+#override_utf8_locale yes
+total_run_times 0
+own_window no
+
+mpd_host localhost
+mpd_port 6600
+
+TEXT
+,[
+#Music
+{"full_text": "${mpd_title} - ${mpd_artist} (${mpd_album})"},
+#CPU
+{"full_text": "CPU: ${freq cpu}"},
+#RAM
+{"full_text": "RAM: $memperc%"},
+#Date
+{"full_text": "${time %A, %d %B %Y}"},
+#Time
+{"full_text": "${time %H:%M:%S}"},
+]
