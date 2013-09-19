@@ -149,7 +149,7 @@ bar {
         status_command ~/.i3/conky
         colors { 
                 statusline #AAAAAA
-                background #333333
+                background #000000
                 focused_workspace #333333 #333333 #FFFFFF
                 inactive_workspace #484848 #484848 #AAAAAA
         }
