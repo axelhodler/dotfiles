@@ -11,7 +11,7 @@ override_utf8_locale yes
 TEXT
 ,[
 #Music
-  {"full_text": "${mpd_title} - ${mpd_artist} (${mpd_album})"},
+  {"full_text": " ♪ [${mpd_title} - ${mpd_artist} (${mpd_album})]"},
 #Shows current user
   {"full_text": " ☻ [${exec whoami}] ", "color":"\#ff00f3"},
 #Shows hostname (heart for lack of better symbol)
