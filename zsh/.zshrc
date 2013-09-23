@@ -16,6 +16,9 @@ alias geroff='setxkbmap -option'
 
 # shortened
 alias s='sudo'
+alias e='emacs -nw'
+alias am='alsamixer'
+alias wee='weechat-curses'
 
 # extra
 alias gofli='cd workspace/jTakt1 && mvn exec:java -Dexec.mainClass="earth.xor.Main"'
