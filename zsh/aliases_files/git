@@ -1,0 +1,3 @@
+alias gis='git status --short'
+alias gia='git add'
+alias gic='git commit -m'
