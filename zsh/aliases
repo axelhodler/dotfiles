@@ -17,5 +17,4 @@ alias am='alsamixer'
 alias wee='weechat-curses'
 
 # extra
-alias gofli='cd workspace/jTakt1 && mvn exec:java -Dexec.mainClass="earth.xor.Main"'
 alias m='mpv'
