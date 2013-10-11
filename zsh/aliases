@@ -15,6 +15,7 @@ alias s='sudo'
 alias e='emacs -nw'
 alias am='alsamixer'
 alias wee='weechat-curses'
+alias pm='pacman'
 
 # extra
 alias m='mpv'
