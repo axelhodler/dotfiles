@@ -5,4 +5,6 @@ feh --bg-scale ~/bg.jpg
 xset b off
 xmodmap ~/.Xmodmap
 numlockx &
+# should actually done by systemd user sessions but idc yet
+mpd &
 exec i3
