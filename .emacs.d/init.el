@@ -51,3 +51,5 @@
 ;; (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 ;; The above is the default in recent emacsen
 
+;;
+(global-whitespace-mode 1)
