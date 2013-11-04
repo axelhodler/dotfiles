@@ -1,50 +1,57 @@
 require("new-tabs.js");
 require("favicon");
 
+var duo = "http://www.duolingo.com/";
+var hn = "https://news.ycombinator.com/";
+var pro = "http://pr0gramm.com/#newest/*";
+var gdrive = "https://drive.google.com/?tab=wo&authuser=0#my-drive";
+var gmail = "https://mail.google.com/mail/u/0/?shva=1#inbox";
 ////////////////////////////////////////////////////////////////////////////
 // Open links sent from xdg-open in the already running conkeror instance //
 ////////////////////////////////////////////////////////////////////////////
-
 url_remoting_fn = load_url_in_new_buffer;
 
-// Google Stuff
-define_webjump("m", "https://mail.google.com/mail/u/0/?shva=1#inbox");
-define_webjump("d", "https://drive.google.com/?tab=wo&authuser=0#my-drive");
+//////////////
+// Webjumps //
+//////////////
+define_webjump("m", gmail);
+define_webjump("d", gdrive);
 define_webjump("t", "https://translate.google.com/?hl=de&tab=mT");
 define_webjump("yt", "http://www.youtube.com/results?search_query=%s&search=Search");
+
+define_webjump("i", "http://imdb.com/find?q=%s");
+define_webjump("duo", duo);
+define_webjump("h", "https://dashboard.heroku.com/apps");
+define_webjump("y", hn);
+define_webjump("dd", "https://duckduckgo.com/?q=%s");
+
+define_webjump("r", "http://www.reddit.com/");
+define_webjump("p", pro);
+define_webjump("gh", "http://github.com/search?q=%s&type=Everything");
+define_webjump("pb", "http://thepiratebay.sx/search/%s");
 
 require("page-modes/wikipedia.js");
 wikipedia_webjumps_format = "wp-%s"; // controls the names of the webjumps.  default is "wikipedia-%s".
 define_wikipedia_webjumps("en", "de", "fr"); // For English, German and French.
 
-define_webjump("imdb", "http://imdb.com/find?q=%s");
-define_webjump("h", "https://dashboard.heroku.com/apps");
-define_webjump("y", "https://news.ycombinator.com/");
-define_webjump("dd", "https://duckduckgo.com/?q=%s");
-
-define_webjump("r", "http://www.reddit.com/");
-define_webjump("p", "http://pr0gramm.com");
-define_webjump("gh", "http://github.com/search?q=%s&type=Everything");
-
 
 ////////////////////////////////////////////
-// Open multiple bookmarks by pressing F1 //
+// Open multiple bookmarks by pressing H  //
 ////////////////////////////////////////////
-
 interactive("open-all",
     "opens bookmarks I visit frequently",
     function(I){
-         load_url_in_new_buffer("https://news.ycombinator.com/",I.window);
-         load_url_in_new_buffer("http://pr0gramm.com",I.window);
-         load_url_in_new_buffer("https://mail.google.com/mail/u/0/?shva=1#inbox",I.window);
-         load_url_in_new_buffer("https://drive.google.com/?tab=wo&authuser=0#my-drive",I.window);
+         load_url_in_new_buffer(hn, I.window);
+         load_url_in_new_buffer(pro, I.window);
+         load_url_in_new_buffer(gmail, I.window);
+         load_url_in_new_buffer(gdrive, I.window);
+         load_url_in_new_buffer(duo, I.window);
     });
-define_key(content_buffer_normal_keymap, "f1", "open-all");
+define_key(content_buffer_normal_keymap, "H", "open-all");
 
 ////////////////////////////////////////////////
 // Bind Number Keys to Switch to Buffers 1-10 //
 ////////////////////////////////////////////////
-
 function define_switch_buffer_key (key, buf_num) {
     define_key(default_global_keymap, key,
                function (I) {
@@ -59,7 +66,6 @@ for (let i = 0; i < 10; ++i) {
 /////////////////////////////////////////
 // Make the hinting numbers (f) larger //
 /////////////////////////////////////////
-
 register_user_stylesheet(
     "data:text/css," +
         escape(
@@ -72,7 +78,6 @@ register_user_stylesheet(
 /////////////////////////////////
 // Darken current page via C-d //
 /////////////////////////////////
-
 function darken_page (I) {
     var styles='* { background: black !important; color: grey !important; }'+
         ':link, :link * { color: #4986dd !important; }'+
@@ -92,7 +97,6 @@ define_key(content_buffer_normal_keymap, "C-d", "darken-page");
 //////////////////////////////////////////////////////////////////////
 // Replaces the focus method of form elements with a dummy function //
 //////////////////////////////////////////////////////////////////////
-
 function focusblock (buffer) {
     var s = Components.utils.Sandbox(buffer.top_frame);
     s.document = buffer.document.wrappedJSObject;
