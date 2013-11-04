@@ -14,8 +14,11 @@ alias geroff='setxkbmap -option'
 alias s='sudo'
 alias e='emacs -nw'
 alias am='alsamixer'
-alias wee='weechat-curses'
 alias pm='pacman'
 
 # extra
 alias m='mpv'
+
+# directories
+alias gomu='/mnt/3tb/musik'
+alias tor='/mnt/3tb/torrent'
