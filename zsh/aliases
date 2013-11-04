@@ -20,5 +20,5 @@ alias pm='pacman'
 alias m='mpv'
 
 # directories
-alias gomu='/mnt/3tb/musik'
-alias tor='/mnt/3tb/torrent'
+alias mu='cd /mnt/3tb/musik'
+alias tor='cd /mnt/3tb/torrent'
