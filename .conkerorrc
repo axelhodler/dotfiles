@@ -53,11 +53,13 @@ define_key(content_buffer_normal_keymap, "H", "open-all");
 // Bind Number Keys to Switch to Buffers 1-10 //
 ////////////////////////////////////////////////
 function define_switch_buffer_key (key, buf_num) {
-    define_key(default_global_keymap, key,
-               function (I) {
-                   switch_to_buffer(I.window,
-                                    I.window.buffers.get_buffer(buf_num));
-               });
+  define_key(default_global_keymap, key,
+    function (I) {
+      if (I.buffer.current_uri.host !== "www.duolingo.com") {
+        switch_to_buffer(I.window,
+        I.window.buffers.get_buffer(buf_num));
+      }
+    });
 }
 for (let i = 0; i < 10; ++i) {
     define_switch_buffer_key(String((i+1)%10), i);
