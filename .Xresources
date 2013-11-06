@@ -1,6 +1,6 @@
 URxvt.scrollBar: off
-URxvt.font: xft:ubuntu mono:size=12:style=medium:antialias=true
-URxvt.boldFont: xft:ubuntu mono:size=12:style=medium:antialias=true
+URxvt.font: xft:ubuntu mono:size=12:style=medium
+URxvt.boldFont: xft:ubuntu mono:size=12:style=medium
 ! Famicom Colors - rzrscm@gmail.com
 *background: #000000
 *foreground: #f8d8f8
