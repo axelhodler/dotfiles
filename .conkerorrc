@@ -49,9 +49,12 @@ interactive("open-all",
     });
 define_key(content_buffer_normal_keymap, "H", "open-all");
 
+
 ////////////////////////////////////////////////
 // Bind Number Keys to Switch to Buffers 1-10 //
+// dont switch on duolingo IMPROVE_ME         //
 ////////////////////////////////////////////////
+
 function define_switch_buffer_key (key, buf_num) {
   define_key(default_global_keymap, key,
     function (I) {
