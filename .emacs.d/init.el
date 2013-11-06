@@ -53,3 +53,7 @@
 
 ;;
 (global-whitespace-mode 1)
+
+;; get the font string via M-x describe-font followed by the fontname
+(set-face-font 'default "-unknown-Ubuntu Mono-normal-normal-normal-*-16-*-*-*-m-0-iso10646-1")
+(set-face-font 'menu "-unknown-Ubuntu Mono-normal-normal-normal-*-16-*-*-*-m-0-iso10646-1")
