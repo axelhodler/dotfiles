@@ -44,6 +44,8 @@ sub sig_printtext {
             localtime
         ).$text;
         $window->print($text, MSGLEVEL_NEVER) if ($window);
+        # launch external py script
+        system '/home/xorrr/dotfiles/scripts/hilightconky.py', $text;
     }
 }
 
