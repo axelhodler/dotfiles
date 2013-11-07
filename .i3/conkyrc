@@ -11,6 +11,8 @@ override_utf8_locale yes
 
 TEXT
 ,[
+#Highlight
+  {"full_text": " ${execi 30 tail -1 /home/xorrr/dotfiles/scripts/hilight} ${execi 30 python /home/xorrr/dotfiles/scripts/refresher.py} ", "color":"\#ffff00"},
 #Music
   {"full_text": " ♪ [${mpd_artist} - ${mpd_title}]"},
 #Shows uploadspeed
