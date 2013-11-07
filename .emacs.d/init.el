@@ -6,3 +6,6 @@
 (setq make-backup-files nil)
 ;; stop creating those #auto-save# files
 (setq auto-save-default nil)
+
+;; remove trailing whitespaces when saving
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
