@@ -30,6 +30,6 @@ URxvt.boldFont: xft:ubuntu mono:size=12:style=medium
 *color15: #fcfcfc
 
 URxvt.perl-ext-common:  default,matcher
-URxvt.url-launcher:      /usr/bin/chromium
+URxvt.url-launcher:      /usr/bin/conkeror
 URxvt.matcher.button:   1
 
