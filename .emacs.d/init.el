@@ -13,6 +13,14 @@
           "M-x "
           (all-completions "" obarray 'commandp))))))
 
+
+;; deactivate with menu-, tool- and scrollbar
+(menu-bar-mode -1)
+  (when (fboundp 'tool-bar-mode)
+    (tool-bar-mode -1))
+  (when (fboundp 'scroll-bar-mode)
+    (scroll-bar-mode -1))
+
 ;; stop creating those backup~ files
 (setq make-backup-files nil)
 ;; stop creating those #auto-save# files
