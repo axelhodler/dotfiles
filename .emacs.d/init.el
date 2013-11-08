@@ -31,6 +31,9 @@
   (package-refresh-contents))
 
 ;; autocomplete
+;; concerning javascript you need to copy javascript-mode to js-mode since
+;; emacs seems to use js-mode by default and AC will therefore try to use
+;; the js-mode dict
 (require 'auto-complete-config)
 (add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-1.4/dict")
