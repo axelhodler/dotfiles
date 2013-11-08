@@ -43,3 +43,11 @@
 (setq ac-auto-start 2)
 ; case sensitivity is important when finding matches
 (setq ac-ignore-case nil)
+
+;; YaSnippet
+(require 'yasnippet) ;; not yasnippet-bundle
+(yas-global-mode 1)
+;; Load the snippet files themselves
+(yas/load-directory "~/.emacs.d/elpa/yasnippet-0.8.0/snippets")
+;; Let's have snippets in the auto-complete dropdown
+(add-to-list 'ac-sources 'ac-source-yasnippet)
