@@ -38,6 +38,9 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
+;; use js2-mode for .js files
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
 ;; autocomplete
 ;; concerning javascript you need to copy javascript-mode to js-mode since
 ;; emacs seems to use js-mode by default and AC will therefore try to use
