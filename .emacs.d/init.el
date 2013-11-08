@@ -70,3 +70,7 @@
 (yas/load-directory "~/.emacs.d/elpa/yasnippet-0.8.0/snippets")
 ;; Let's have snippets in the auto-complete dropdown
 (add-to-list 'ac-sources 'ac-source-yasnippet)
+
+;; Font
+(set-face-font 'default "-unknown-Ubuntu Mono-bold-normal-normal-*-18-*-*-*-m-0-iso10646-1")
+(set-face-font 'menu "-unknown-Ubuntu Mono-normal-normal-normal-*-18-*-*-*-m-0-iso10646-1")
