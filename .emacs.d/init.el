@@ -45,6 +45,10 @@
 ;; use js2-mode for .js files
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
+(require 'js2-refactor)
+;; eg. extract function with `C-c C-m ef`.
+(js2r-add-keybindings-with-prefix "C-c C-m")
+
 ;; autocomplete
 ;; concerning javascript you need to copy javascript-mode to js-mode since
 ;; emacs seems to use js-mode by default and AC will therefore try to use
