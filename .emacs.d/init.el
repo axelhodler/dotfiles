@@ -77,3 +77,6 @@
 
 ;; Use solarized theme
 (load-theme 'solarized-dark t)
+
+;; spaces instead of tabs
+(setq-default indent-tabs-mode nil)
