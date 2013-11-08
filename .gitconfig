@@ -1,0 +1,14 @@
+[user]
+	email = derxor@gmail.com
+	name = xorrr
+[color]
+	ui = true
+[alias]
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[giggle]
+	main-window-maximized = false
+	main-window-geometry = 1920x1080+1920+0
+	file-view-vpane-position = 541
+	history-view-vpane-position = 863
+	main-window-view = FileView
