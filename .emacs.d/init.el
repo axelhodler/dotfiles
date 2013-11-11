@@ -21,6 +21,9 @@
   (when (fboundp 'scroll-bar-mode)
     (scroll-bar-mode -1))
 
+;; disable emacs splash screen
+(setq inhibit-splash-screen t)
+
 ;; stop creating those backup~ files
 (setq make-backup-files nil)
 ;; stop creating those #auto-save# files
