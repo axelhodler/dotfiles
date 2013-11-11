@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import time, os
 
-FILENAME = 'hilight'
+FILENAME = '/home/xorrr/dotfiles/scripts/hilight'
 
 filestats = os.stat(FILENAME)
 
