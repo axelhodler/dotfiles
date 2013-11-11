@@ -2,8 +2,8 @@
 import sys, re
 
 # format the string
-match = re.search(r'\s(#\w+)', sys.argv[1])
-chan = match.group(1)
+match = re.search(r'<(.+)>', sys.argv[1])
+user = match.group(1)
 
 # write the hilight to file
 f = open('hilight', 'w')
