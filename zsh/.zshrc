@@ -3,3 +3,6 @@
 export EDITOR=emacs
 
 source ~/dotfiles/zsh/aliases
+
+# disable zsh's autocorrect
+unsetopt correct
