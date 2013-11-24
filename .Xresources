@@ -2,34 +2,33 @@ URxvt.scrollBar: off
 URxvt.font: xft:ubuntu mono:size=12:style=medium
 URxvt.boldFont: xft:ubuntu mono:size=12:style=medium
 ! Famicom Colors - rzrscm@gmail.com
-*background: #000000
-*foreground: #f8d8f8
+URxvt*background: #000000
+URxvt*foreground: #f8d8f8
 ! Black + DarkGrey
-*color0:  #010101
-*color8:  #787878
+URxvt*color0:  #010101
+URxvt*color8:  #787878
 ! DarkRed + Red
-*color1:  #f83800
-*color9:  #f87858
+URxvt*color1:  #f83800
+URxvt*color9:  #f87858
 ! DarkGreen + Green
-*color2:  #00b800
-*color10: #58d854
+URxvt*color2:  #00b800
+URxvt*color10: #58d854
 ! DarkYellow + Yellow
-*color3:  #f8b800
-*color11: #f8d878
+URxvt*color3:  #f8b800
+URxvt*color11: #f8d878
 ! DarkBlue + Blue
-*color4:  #0000fc
-*color12: #0078f8
+URxvt*color4:  #0000fc
+URxvt*color12: #0078f8
 ! DarkMagenta + Magenta
-*color5:  #d800cc
-*color13: #f878f8
+URxvt*color5:  #d800cc
+URxvt*color13: #f878f8
 !DarkCyan + Cyan
-*color6:  #3cbcfc
-*color14: #a4e4fc
+URxvt*color6:  #3cbcfc
+URxvt*color14: #a4e4fc
 ! LightGrey + White
-*color7:  #bcbcbc
-*color15: #fcfcfc
+URxvt*color7:  #bcbcbc
+URxvt*color15: #fcfcfc
 
 URxvt.perl-ext-common:  default,matcher
 URxvt.url-launcher:      /usr/bin/conkeror
 URxvt.matcher.button:   1
-
