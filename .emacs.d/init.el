@@ -83,3 +83,6 @@
 
 ;; spaces instead of tabs
 (setq-default indent-tabs-mode nil)
+
+;; use html-mode for the python bottle template files
+(add-to-list 'auto-mode-alist '("\\.tpl\\'" . html-mode))
