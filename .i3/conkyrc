@@ -17,6 +17,8 @@ TEXT
   {"full_text": " ♪ [${mpd_artist} - ${mpd_title}]"},
 #Shows uploadspeed
   {"full_text": " ▲ [${upspeed}] ", "color":"\#ff0000"},
+#Battery
+  {"full_text":" ϟ ${battery_percent BAT0}","color":"\#00ff00"},
 #Shows downloadspeed
   {"full_text": " ▼ [${downspeed}] ", "color":"\#00fff2"},
 #Shows current memory usage with a bar
