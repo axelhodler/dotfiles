@@ -3,6 +3,13 @@
 (ido-mode t)
 ;; disable looking in other directories when trying to open a file with name x
 (setq ido-auto-merge-work-directories-length -1)
+;; create necessary parent directories when creating a file
+(defadvice find-file (before make-directory-maybe (filename &optional wildcards) activate)
+  "Create parent directory if not exists while visiting file."
+  (unless (file-exists-p filename)
+    (let ((dir (file-name-directory filename)))
+      (unless (file-exists-p dir)
+        (make-directory dir)))))
 
 ;; M-x mode, autocomplete M-x methods
 (global-set-key
