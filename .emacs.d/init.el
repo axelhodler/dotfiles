@@ -1,6 +1,8 @@
 ;; Interactively Do Things
 (require 'ido)
 (ido-mode t)
+;; disable looking in other directories when trying to open a file with name x
+(setq ido-auto-merge-work-directories-length -1)
 
 ;; M-x mode, autocomplete M-x methods
 (global-set-key
