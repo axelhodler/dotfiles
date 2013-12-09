@@ -95,3 +95,6 @@
 
 ;; use html-mode for the python bottle template files
 (add-to-list 'auto-mode-alist '("\\.tpl\\'" . html-mode))
+
+;; y and n instead of yes or no prompt
+(defalias 'yes-or-no-p 'y-or-n-p)
