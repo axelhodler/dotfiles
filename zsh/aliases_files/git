@@ -1,5 +1,6 @@
 alias gis='git status --short'
 alias gia='git add'
+alias gip='git add -p'
 alias gic='git commit -m'
 alias gcu='git checkout --'
 alias grh='git reset HEAD'
