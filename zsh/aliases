@@ -13,6 +13,7 @@ alias geroff='setxkbmap -option'
 # shortened
 alias s='sudo'
 alias e='emacs -nw'
+alias ev='evince'
 alias am='alsamixer'
 alias pm='pacman'
 alias ll='ls -la'
