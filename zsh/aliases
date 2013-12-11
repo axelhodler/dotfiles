@@ -18,6 +18,7 @@ alias am='alsamixer'
 alias pm='pacman'
 alias ll='ls -la'
 alias t='touch'
+alias c='cd'
 
 # extra
 alias m='mpv'
