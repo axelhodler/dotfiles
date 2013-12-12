@@ -28,3 +28,8 @@ alias mu='cd /mnt/3tb/musik'
 alias tor='cd /mnt/3tb/torrent'
 alias pinc='cd ~/devel/pinbird-client'
 alias pins='cd ~/workspace/pinbird'
+
+# python
+# Virtual Environment stuff
+alias ve='source env/bin/activate'
+alias de='deactivate'
