@@ -19,6 +19,7 @@ alias pm='pacman'
 alias ll='ls -la'
 alias t='touch'
 alias c='cd'
+alias lo='slock'
 
 # extra
 alias m='mpv'
@@ -26,8 +27,11 @@ alias m='mpv'
 # directories
 alias mu='cd /mnt/3tb/musik'
 alias tor='cd /mnt/3tb/torrent'
+
+# current projects
 alias pinc='cd ~/devel/pinbird-client'
 alias pins='cd ~/workspace/pinbird'
+alias no='cd ~/devel/notes'
 
 # python
 # Virtual Environment stuff
