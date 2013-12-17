@@ -98,3 +98,8 @@
 
 ;; y and n instead of yes or no prompt
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+;; highlight column 80 to help with the eighty columns rule
+(require 'column-marker)
+(add-hook 'js2-mode-hook (lambda () (interactive) (column-marker-3 80)))
+(setq column-number-mode t)
