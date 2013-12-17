@@ -1,6 +1,7 @@
 # Executes commands at the start of an interactive session
 
 export EDITOR=emacs
+export ANDROID_HOME=/opt/android-sdk
 
 source ~/dotfiles/zsh/aliases
 
