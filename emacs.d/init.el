@@ -103,3 +103,8 @@
 (require 'column-marker)
 (add-hook 'js2-mode-hook (lambda () (interactive) (column-marker-3 80)))
 (setq column-number-mode t)
+
+;; shortcuts
+(defalias 'ir 'indent-region)
+(defalias 'rb 'revert-buffer)
+(defalias 'lf 'load-file)
