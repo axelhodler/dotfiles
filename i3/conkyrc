@@ -9,6 +9,9 @@ use_spacer left
 
 override_utf8_locale yes
 
+# Prevent flickering
+double_buffer yes
+
 TEXT
 ,[
 #Highlight
