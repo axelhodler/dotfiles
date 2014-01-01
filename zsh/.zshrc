@@ -3,6 +3,11 @@
 export EDITOR=emacs
 export ANDROID_HOME=/opt/android-sdk
 
+# make swing applications not look shitty.
+# - to make it work with dmenu add the line to:
+# /etc/profile.d/jre.sh
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+
 source ~/dotfiles/zsh/aliases
 
 # disable zsh's autocorrect
