@@ -15,7 +15,7 @@ double_buffer yes
 TEXT
 ,[
 #Highlight
-  {"full_text": "${execi 30 tail -1 /home/xorrr/dotfiles/scripts/hilight}", "color":"\#ffff00"},
+  {"full_text": "${execi 30 tail -1 /home/xorrr/dotfiles/scripts/hilight} ${execi 30 python /home/xorrr/dotfiles/scripts/refresher.py}", "color":"\#ffff00"},
 #Music
   {"full_text": "♬ ${mpd_artist} - ${mpd_title}", "color": "\#ffffff"},
 #Shows downloadspeed
