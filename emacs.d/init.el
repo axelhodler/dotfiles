@@ -109,3 +109,6 @@
 (defalias 'ir 'indent-region)
 (defalias 'rb 'revert-buffer)
 (defalias 'lf 'load-file)
+
+;; use web-mode for .tpl (bottle template) files
+(add-to-list 'auto-mode-alist '("\\.tpl\\'" . web-mode))
