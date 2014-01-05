@@ -38,7 +38,11 @@ alias no='cd ~/devel/notesdude'
 alias ve='source .env/bin/activate'
 alias de='deactivate'
 
+# java
 # make swing applications not look shitty.
 # - to make it work with dmenu add the line to:
 # /etc/profile.d/jre.sh
 alias swingtk="export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'"
+
+# Override the mvn command with the colorized one.
+alias mvn="mvn-color"
