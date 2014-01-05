@@ -37,3 +37,8 @@ alias no='cd ~/devel/notesdude'
 # Virtual Environment stuff
 alias ve='source .env/bin/activate'
 alias de='deactivate'
+
+# make swing applications not look shitty.
+# - to make it work with dmenu add the line to:
+# /etc/profile.d/jre.sh
+alias swingtk="export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'"
