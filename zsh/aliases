@@ -24,6 +24,7 @@ alias lo='slock'
 
 # extra
 alias m='mpv'
+alias getip='curl -s icanhazip.com'
 
 # directories
 alias mu='cd /mnt/3tb/musik'
