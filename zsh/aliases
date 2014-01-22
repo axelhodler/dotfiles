@@ -19,7 +19,6 @@ alias am='alsamixer'
 alias pm='pacman'
 alias ll='ls -la'
 alias t='touch'
-alias c='cd'
 alias lo='slock'
 
 # extra
