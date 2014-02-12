@@ -46,3 +46,10 @@ alias swingtk="export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aa
 
 # Override the mvn command with the colorized one.
 alias mvn="mvn-color"
+
+# Games
+alias winesteam="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe -no-dwrite"
+
+# Devel
+alias ru='./bin/run.sh'
+alias rut='./bin/run_tests.sh'
