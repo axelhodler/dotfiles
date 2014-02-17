@@ -1,3 +1,4 @@
+! reload via: xrdb ~/.Xresources
 URxvt.scrollBar: off
 URxvt.font: xft:ubuntu mono:size=12:style=medium
 URxvt.boldFont: xft:ubuntu mono:size=12:style=medium
@@ -29,6 +30,20 @@ URxvt*color14: #a4e4fc
 URxvt*color7:  #bcbcbc
 URxvt*color15: #fcfcfc
 
-URxvt.perl-ext-common:  default,matcher
-URxvt.url-launcher:      /usr/bin/conkeror
+! ?????
 URxvt.matcher.button:   1
+
+! Perl extensions
+! See: https://github.com/muennich/urxvt-perls
+URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
+! URL-SELECT
+URxvt.url-select.launcher:  firefox
+URxvt.url-select.underline: true
+! exit via M-q
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+
+! CLIPBOARD stuff
+URxvt.keysym.C-c:   perl:clipboard:copy
+URxvt.keysym.C-v:   perl:clipboard:paste
