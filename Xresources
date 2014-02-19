@@ -45,5 +45,5 @@ URxvt.keysym.M-Escape:      perl:keyboard-select:activate
 URxvt.keysym.M-s:           perl:keyboard-select:search
 
 ! CLIPBOARD stuff
-URxvt.keysym.C-c:   perl:clipboard:copy
+URxvt.keysym.M-c:   perl:clipboard:copy
 URxvt.keysym.C-v:   perl:clipboard:paste
