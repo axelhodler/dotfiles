@@ -1,7 +1,6 @@
 ! reload via: xrdb ~/.Xresources
 URxvt.scrollBar: off
-URxvt.font: xft:ubuntu mono:size=12:style=medium
-URxvt.boldFont: xft:ubuntu mono:size=12:style=medium
+URxvt.font: xft:Terminus:pixelsize=14
 ! Famicom Colors - rzrscm@gmail.com
 URxvt*background: #000000
 URxvt*foreground: #f8d8f8
