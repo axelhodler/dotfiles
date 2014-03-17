@@ -1,33 +1,55 @@
 ! reload via: xrdb ~/.Xresources
 URxvt.scrollBar: off
 URxvt.font: xft:Terminus:pixelsize=14
-! Famicom Colors - rzrscm@gmail.com
+
+! euphrasia fg/bg
 URxvt*background: #000000
-URxvt*foreground: #f8d8f8
-! Black + DarkGrey
-URxvt*color0:  #010101
-URxvt*color8:  #787878
-! DarkRed + Red
-URxvt*color1:  #f83800
-URxvt*color9:  #f87858
-! DarkGreen + Green
-URxvt*color2:  #00b800
-URxvt*color10: #58d854
-! DarkYellow + Yellow
-URxvt*color3:  #f8b800
-URxvt*color11: #f8d878
-! DarkBlue + Blue
-URxvt*color4:  #0000fc
-URxvt*color12: #0078f8
-! DarkMagenta + Magenta
-URxvt*color5:  #d800cc
-URxvt*color13: #f878f8
-!DarkCyan + Cyan
-URxvt*color6:  #3cbcfc
-URxvt*color14: #a4e4fc
-! LightGrey + White
-URxvt*color7:  #bcbcbc
-URxvt*color15: #fcfcfc
+URxvt*foreground: #E6E6E6
+URxvt*cursorColor: #1AAA13
+
+! X.org apps bg/fg
+*background: #D0CECB
+*foreground: #090C19
+
+! black
+*color0: #222946
+! dark grey
+*color8: #8C8B89
+
+! red
+*color1: #B32323
+! bright red
+*color9: #DC2C2C
+
+! green
+*color2: #1AAA13
+! bright green
+*color10: #5DCE33
+
+! yellow
+*color3: #FF9F3E
+! bright yellow
+*color11: #E6CB29
+
+! blue
+*color4: #4957F3
+! bright blue
+*color12: #4D79FF
+
+! magenta
+*color5: #BF3E94
+! bright magenta
+*color13: #B641CC
+
+! cyan
+*color6: #09A5B3
+! bright cyan
+*color14: #3CB6F3
+
+! light grey
+*color7: #AEAEAE
+! white
+*color15: #DBDDE4
 
 ! ?????
 URxvt.matcher.button:   1
