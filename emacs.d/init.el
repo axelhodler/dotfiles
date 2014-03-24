@@ -54,6 +54,9 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
+;; use two spaces instead of four indentation in js2-mode
+(setq-default js2-basic-offset 2)
+
 ;; use js2-mode for .js files
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
