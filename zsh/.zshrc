@@ -9,3 +9,5 @@ unsetopt correct
 source ~/dotfiles/zsh/mavenstuff
 
 source ~/dotfiles/zsh/aliases
+
+[ -s "/home/xorrr/.scm_breeze/scm_breeze.sh" ] && source "/home/xorrr/.scm_breeze/scm_breeze.sh"
