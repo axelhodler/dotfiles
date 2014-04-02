@@ -56,6 +56,7 @@ alias winesteam="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe -n
 alias ru='./bin/run.sh'
 alias rut='./bin/run_tests.sh'
 alias ruit='./bin/run_integration_tests.sh'
+alias rukt='./bin/run_karma_tests.sh'
 
 # Misc
 alias copy='xclip -selection c'
