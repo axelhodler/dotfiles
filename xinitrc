@@ -4,6 +4,8 @@
 # setxkbmap -option  # resets the layout options
 feh --bg-scale ~/bg.jpg
 xset b off
+# disable screen saver blanking
+xset s off
 
 numlockx &
 # should actually done by systemd user sessions but idc yet
