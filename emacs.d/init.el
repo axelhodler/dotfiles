@@ -121,3 +121,6 @@
 
 ;; use web-mode for .tpl (bottle template) files
 (add-to-list 'auto-mode-alist '("\\.tpl\\'" . web-mode))
+
+;; auto refresh buffer if file has changed
+(global-auto-revert-mode t)
