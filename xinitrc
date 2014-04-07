@@ -6,6 +6,7 @@ feh --bg-scale ~/bg.jpg
 xset b off
 # disable screen saver blanking
 xset s off
+xset -dpms
 
 numlockx &
 # should actually done by systemd user sessions but idc yet
