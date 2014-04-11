@@ -1,10 +1,11 @@
-background        no
-out_to_console      yes
-out_to_x              no
-update_interval         1
-total_run_times           0
-short_units                 yes
-pad_percents                  3
+background       no
+out_to_console   yes
+out_to_x         no
+update_interval  1
+total_run_times  0
+short_units      yes
+pad_percents     3
+
 use_spacer left
 
 override_utf8_locale yes
@@ -16,22 +17,28 @@ TEXT
 ,[
 #Highlight
   {"full_text": "${execi 30 tail -1 /home/xorrr/dotfiles/scripts/hilight} ${execi 30 python /home/xorrr/dotfiles/scripts/refresher.py}", "color":"\#ffff00"},
+
 #Music
   {"full_text": "♬ ${mpd_artist} - ${mpd_title}", "color": "\#ffffff"},
+
 #Shows downloadspeed
   {"full_text": "▼ ${downspeed} ", "color":"\#58FAF4"},
+
 #Shows uploadspeed
   {"full_text": "▲ ${upspeed} ", "color":"\#ff0000"},
+
 #Shows current memory usage with a bar
   {"full_text": "mem: ${memperc}% ", "color":"\#00ff00"},
+
 #Shows current CPU usage with a bar
   {"full_text": "cpu: ${cpu}% ", "color":"\#ffff00"},
+
 #Show weather
   {"full_text": "☀ ${execi 300 /home/xorrr/dotfiles/scripts/weather.sh 'EUR|DE|GM001|Stuttgart'}","color":"\#ffffff"},
+
 #Battery
   {"full_text":"ϟ ${battery_percent BAT0}","color":"\#00ff00"},
+
 #Shows time
   {"full_text": "${time %a %d %b} ${time %H:%M:%S} ","color": "\#ffffff"}
 ]
-
-#See
