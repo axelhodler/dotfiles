@@ -15,35 +15,35 @@ double_buffer yes
 
 TEXT
 ,[
-#Highlight
+# Highlight
   {"full_text": "${execi 30 tail -1 /home/xorrr/dotfiles/scripts/hilight} ${execi 30 python /home/xorrr/dotfiles/scripts/refresher.py}", "color":"\#ffff00"},
 
 # Music
   { "full_text" : ${if_mpd_playing} "♬ ", "color" : "\#545454", "separator" : false, "separator_block_width" : 3 },\
   { "full_text" : "${mpd_artist 20} - ${mpd_title 30}"${else}""${endif}, "color" : "\#909737", "min_width" : 300},\
 
-#Shows downloadspeed
-  {"full_text": "▼ ${downspeed} ", "color":"\#58FAF4"},
+# Download
+  {"full_text": "▼ ${downspeed} ", "color":"\#909737"},\
 
-#Shows uploadspeed
-  {"full_text": "▲ ${upspeed} ", "color":"\#ff0000"},
+# Upload
+  {"full_text": "▲ ${upspeed} ", "color":"\#909737"},\
 
-#Shows current memory usage with a bar
-  {"full_text": "mem: ${memperc}% ", "color":"\#00ff00"},
+# Memory
+  {"full_text": "mem: ${memperc}% ", "color":"\#909737"},\
 
-#Shows current CPU usage with a bar
-  {"full_text": "cpu: ${cpu}% ", "color":"\#ffff00"},
+# CPU
+  {"full_text": "cpu: ${cpu}% ", "color":"\#909737"},\
 
-#Show weather
-  {"full_text": "☀ ${execi 300 /home/xorrr/dotfiles/scripts/weather.sh 'EUR|DE|GM001|Stuttgart'}","color":"\#ffffff"},
+# Weather
+  {"full_text": "☀ ${execi 300 /home/xorrr/dotfiles/scripts/weather.sh 'EUR|DE|GM001|Stuttgart'}","color":"\#909737"},\
 
-#Battery
-  {"full_text":"ϟ ${battery_percent BAT0}","color":"\#00ff00"},
+# Battery
+  {"full_text":"ϟ ${battery_percent BAT0}","color":"\#909737"},\
 
 # Volume:
   {"full_text":"VOL","color":"\#545454","separator":false,"separator_block_width":6},\
   {"full_text":"${execi 1 amixer sget Master,0 | egrep -o '([0-9]+%|\[(on|off)\])' | sed ':a;N;$!ba;s/\n/ /g'}","color":"\#909737","separator":false},\
 
-#Shows time
-  {"full_text": "${time %a %d %b} ${time %H:%M:%S} ","color": "\#ffffff"}
+# Time
+  {"full_text": "${time %a %d %b} ${time %H:%M:%S} ","color": "\#909737"}
 ]
