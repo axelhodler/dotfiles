@@ -11,45 +11,40 @@ URxvt*cursorColor: #1AAA13
 *background: #D0CECB
 *foreground: #090C19
 
-! black
-*color0: #222946
-! dark grey
-*color8: #8C8B89
+! Colors
+*cursorColor: #93a1a1
 
-! red
-*color1: #B32323
-! bright red
-*color9: #DC2C2C
+!! black dark/light
+*color0: #121212
+*color8: #2e3436
 
-! green
-*color2: #1AAA13
-! bright green
-*color10: #5DCE33
+!! red dark/light
+*color1: #a35b66
+*color9: #ab6b74
 
-! yellow
-*color3: #FF9F3E
-! bright yellow
-*color11: #E6CB29
+!! green dark/light
+*color2: #99ab6f
+*color10: #acb972
 
-! blue
-*color4: #4957F3
-! bright blue
-*color12: #4D79FF
+!! yellow dark/light
+*color3: #ca9733
+*color11: #ccaa69
 
-! magenta
-*color5: #BF3E94
-! bright magenta
-*color13: #B641CC
+!! blue dark/light
+*color4: #495d6e
+*color12: #687987
 
-! cyan
-*color6: #09A5B3
-! bright cyan
-*color14: #3CB6F3
+!! magenta dark/light
+*color5: #825969
+*color13: #977381
 
-! light grey
-*color7: #AEAEAE
-! white
-*color15: #DBDDE4
+!! cyan dark/light
+*color6: #839191
+*color14: #98a4a4
+
+!! white dark/light
+*color7: #e0e0e0
+*color15: #e5e5e5
 
 ! ?????
 URxvt.matcher.button:   1
