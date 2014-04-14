@@ -136,6 +136,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# class         border  backgr. text    indicator
+client.focused  #909737 #909737 #111111 #2e9ef4
+
 # Hide window title
 new_window 1pixel
 
