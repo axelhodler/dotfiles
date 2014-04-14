@@ -153,10 +153,12 @@ bindsym $mod+Shift+p exec "ncmpcpp play"
 bar {
         position top
         status_command ~/.i3/conky
-        colors { 
-                statusline #AAAAAA
+        colors {
+                statusline #605c5a
                 background #000000
-                focused_workspace #58FAF4 #013ADF #FFFFFF
-                inactive_workspace #484848 #484848 #AAAAAA
+                focused_workspace #161616 #909737 #FFFFFF
+                active_workspace #161616 #161616 #a5a5a5
+                inactive_workspace #161616 #545454 #a5a5a5
+                urgent_workspace #161616 #545454 #a5a5a5
         }
 }
