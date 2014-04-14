@@ -39,6 +39,10 @@ TEXT
 #Battery
   {"full_text":"ϟ ${battery_percent BAT0}","color":"\#00ff00"},
 
+# Volume:
+  {"full_text":"VOL","color":"\#545454","separator":false,"separator_block_width":6},\
+  {"full_text":"${execi 1 amixer sget Master,0 | egrep -o '([0-9]+%|\[(on|off)\])' | sed ':a;N;$!ba;s/\n/ /g'}","color":"\#909737","separator":false},\
+
 #Shows time
   {"full_text": "${time %a %d %b} ${time %H:%M:%S} ","color": "\#ffffff"}
 ]
