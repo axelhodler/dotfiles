@@ -6,6 +6,8 @@ export ANDROID_HOME=/opt/android-sdk
 # disable zsh's autocorrect
 unsetopt correct
 
+source ~/dotfiles/zsh/zpreztorc
+
 source ~/dotfiles/zsh/mavenstuff
 
 source ~/dotfiles/zsh/aliases
