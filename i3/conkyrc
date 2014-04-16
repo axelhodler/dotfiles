@@ -20,7 +20,8 @@ TEXT
 
 # Music
   { "full_text" : ${if_mpd_playing} "♬ ", "color" : "\#545454", "separator" : false, "separator_block_width" : 3 },\
-  { "full_text" : "${mpd_artist 20} - ${mpd_title 30}"${else}""${endif}, "color" : "\#909737", "min_width" : 300},\
+  { "full_text" : "${mpd_artist 20} - ${mpd_title 30}", "color" : "\#909737", "separator" : false, "min_width" : 300},\
+  { "full_text" : "[${mpd_elapsed}/${mpd_length}]" ${else}""${endif}, "color" : "\#909737"},\
 
 # Download
   {"full_text": "▼ ${downspeed} ", "color":"\#909737"},\
