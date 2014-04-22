@@ -50,9 +50,6 @@ alias de='deactivate'
 # /etc/profile.d/jre.sh
 alias swingtk="export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'"
 
-# Override the mvn command with the colorized one.
-alias mvn="mvn-color"
-
 # Games
 alias winesteam="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe -no-dwrite"
 
