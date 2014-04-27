@@ -11,28 +11,6 @@
       (unless (file-exists-p dir)
         (make-directory dir)))))
 
-;; M-x mode, autocomplete M-x methods
-(global-set-key
-     "\M-x"
-     (lambda ()
-       (interactive)
-       (call-interactively
-        (intern
-         (ido-completing-read
-          "M-x "
-          (all-completions "" obarray 'commandp))))))
-
-
-;; deactivate with menu-, tool- and scrollbar
-(menu-bar-mode -1)
-  (when (fboundp 'tool-bar-mode)
-    (tool-bar-mode -1))
-  (when (fboundp 'scroll-bar-mode)
-    (scroll-bar-mode -1))
-
-;; disable emacs splash screen
-(setq inhibit-splash-screen t)
-
 ;; stop creating those backup~ files
 (setq make-backup-files nil)
 ;; stop creating those #auto-save# files
@@ -96,27 +74,13 @@
 ;; Let's have snippets in the auto-complete dropdown
 (add-to-list 'ac-sources 'ac-source-yasnippet)
 
-;; Font
-(set-face-font 'default "-unknown-Ubuntu Mono-bold-normal-normal-*-18-*-*-*-m-0-iso10646-1")
-(set-face-font 'menu "-unknown-Ubuntu Mono-normal-normal-normal-*-18-*-*-*-m-0-iso10646-1")
-
-;; Use solarized theme
-(load-theme 'solarized-dark t)
-
-;; spaces instead of tabs
-(setq-default indent-tabs-mode nil)
-
 ;; use html-mode for the python bottle template files
 (add-to-list 'auto-mode-alist '("\\.tpl\\'" . html-mode))
 ;; use html-mode for the handlebars template files
 (add-to-list 'auto-mode-alist '("\\.handlebars\\'" . html-mode))
 (add-to-list 'auto-mode-alist '("\\.hbs\\'" . html-mode))
 
-;; highlight column 80 to help with the eighty columns rule
 (require 'column-marker)
-(add-hook 'js2-mode-hook (lambda () (interactive) (column-marker-3 80)))
-(add-hook 'python-mode-hook (lambda () (interactive) (column-marker-3 80)))
-(setq column-number-mode t)
 
 ;; use web-mode for .tpl (bottle template) files
 (add-to-list 'auto-mode-alist '("\\.tpl\\'" . web-mode))
@@ -131,4 +95,5 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+(load "~/dotfiles/emacs.d/init_look_and_feel.el")
 (load "~/dotfiles/emacs.d/init_keybinding.el")
