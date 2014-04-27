@@ -112,20 +112,11 @@
 (add-to-list 'auto-mode-alist '("\\.handlebars\\'" . html-mode))
 (add-to-list 'auto-mode-alist '("\\.hbs\\'" . html-mode))
 
-;; y and n instead of yes or no prompt
-(defalias 'yes-or-no-p 'y-or-n-p)
-
 ;; highlight column 80 to help with the eighty columns rule
 (require 'column-marker)
 (add-hook 'js2-mode-hook (lambda () (interactive) (column-marker-3 80)))
 (add-hook 'python-mode-hook (lambda () (interactive) (column-marker-3 80)))
 (setq column-number-mode t)
-
-;; shortcuts
-(defalias 'ir 'indent-region)
-(defalias 'rb 'revert-buffer)
-(defalias 'lf 'load-file)
-(defalias 'cr 'comment-or-uncomment-region)
 
 ;; use web-mode for .tpl (bottle template) files
 (add-to-list 'auto-mode-alist '("\\.tpl\\'" . web-mode))
@@ -139,3 +130,5 @@
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+(load "~/dotfiles/emacs.d/init_keybinding.el")
