@@ -1,23 +1,5 @@
 ;; Interactively Do Things
 (require 'ido)
-(ido-mode t)
-;; disable looking in other directories when trying to open a file with name x
-(setq ido-auto-merge-work-directories-length -1)
-;; create necessary parent directories when creating a file
-(defadvice find-file (before make-directory-maybe (filename &optional wildcards) activate)
-  "Create parent directory if not exists while visiting file."
-  (unless (file-exists-p filename)
-    (let ((dir (file-name-directory filename)))
-      (unless (file-exists-p dir)
-        (make-directory dir)))))
-
-;; stop creating those backup~ files
-(setq make-backup-files nil)
-;; stop creating those #auto-save# files
-(setq auto-save-default nil)
-
-;; remove trailing whitespaces when saving
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; add the marmelade repository
 (require 'package)
@@ -84,9 +66,6 @@
 
 ;; use web-mode for .tpl (bottle template) files
 (add-to-list 'auto-mode-alist '("\\.tpl\\'" . web-mode))
-
-;; auto refresh buffer if file has changed
-(global-auto-revert-mode t)
 
 ;; markdown mode
 (autoload 'markdown-mode "markdown-mode"

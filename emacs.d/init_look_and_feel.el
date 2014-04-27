@@ -35,3 +35,22 @@
 (add-hook 'js2-mode-hook (lambda () (interactive) (column-marker-3 80)))
 (add-hook 'python-mode-hook (lambda () (interactive) (column-marker-3 80)))
 (setq column-number-mode t)
+
+(ido-mode t)
+;; disable looking in other directories when trying to open a file with name x
+(setq ido-auto-merge-work-directories-length -1)
+;; create necessary parent directories when creating a file
+(defadvice find-file (before make-directory-maybe (filename &optional wildcards) activate)
+  "Create parent directory if not exists while visiting file."
+  (unless (file-exists-p filename)
+    (let ((dir (file-name-directory filename)))
+      (unless (file-exists-p dir)
+        (make-directory dir)))))
+
+;; stop creating those backup~ files
+(setq make-backup-files nil)
+;; stop creating those #auto-save# files
+(setq auto-save-default nil)
+
+;; remove trailing whitespaces when saving
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
