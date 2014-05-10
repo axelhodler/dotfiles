@@ -3,6 +3,7 @@
 #
 export GOPATH=$HOME/go
 PATH="${PATH}:${GOPATH}/bin"
+PATH="${PATH}:/home/xorrr/.gem/ruby/2.1.0/bin"
 export PATH
 
 # run startx after login
