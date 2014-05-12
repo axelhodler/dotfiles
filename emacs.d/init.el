@@ -56,6 +56,9 @@
 ;; Let's have snippets in the auto-complete dropdown
 (add-to-list 'ac-sources 'ac-source-yasnippet)
 
+;; auto refresh buffer if file has changed
+(global-auto-revert-mode t)
+
 ;; use html-mode for the python bottle template files
 (add-to-list 'auto-mode-alist '("\\.tpl\\'" . html-mode))
 ;; use html-mode for the handlebars template files
