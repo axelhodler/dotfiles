@@ -18,11 +18,19 @@ TEXT
 # Highlight
   {"full_text": "${execi 30 tail -1 /home/xorrr/dotfiles/scripts/hilight} ${execi 30 python /home/xorrr/dotfiles/scripts/refresher.py}", "color":"\#ffff00"},
 
+# wlan0
 # Download
-  {"full_text": "▼ ${downspeed} ", "color":"\#909737"},\
+  {"full_text": "W▼ ${downspeed wlan0} ", "color":"\#909737"},\
 
 # Upload
-  {"full_text": "▲ ${upspeed} ", "color":"\#909737"},\
+  {"full_text": "W▲ ${upspeed wlan0} ", "color":"\#909737"},\
+
+# eth0
+# Download
+  {"full_text": "▼ ${downspeed eth0} ", "color":"\#909737"},\
+
+# Upload
+  {"full_text": "▲ ${upspeed eth0} ", "color":"\#909737"},\
 
 # Memory
   {"full_text": "mem: ${memperc}% ", "color":"\#909737"},\
