@@ -1,5 +1,8 @@
 startup_message off
 
+# ctrl+j instead of ctrl+a
+escape ^Jj
+
 hardstatus off
 hardstatus alwayslastline
 hardstatus alwayslastline "%?%{gk}%-Lw%?%{mk}%n*%f %t%?(%u)%?%?%{gk}%+Lw%?%{Yk}"
