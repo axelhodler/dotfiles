@@ -79,3 +79,5 @@
 
 (load "~/dotfiles/emacs.d/init_look_and_feel.el")
 (load "~/dotfiles/emacs.d/init_keybinding.el")
+(load "~/dotfiles/emacs.d/init_linux_custom.el")
+(load "~/dotfiles/emacs.d/init_osx_custom.el")
