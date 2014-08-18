@@ -12,6 +12,15 @@ alias xbd='xbacklight -dec 10'
 # git
 source ~/dotfiles/zsh/aliases_files/git
 
+# svn
+alias ss='svn status'
+alias slg='svn log -l 10'
+alias sa='svn add'
+alias sd='svn diff'
+alias sr='svn revert'
+alias srr='svn revert --recursive'
+alias sc='svn commit'
+
 # keymapstuff
 alias ger='setxkbmap -option grp:alt_shift_toggle "de,us"'
 alias geroff='setxkbmap -option'
