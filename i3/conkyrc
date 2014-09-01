@@ -20,17 +20,17 @@ TEXT
 
 # wlan0
 # Download
-  {"full_text": "W▼ ${downspeed wlan0} ", "color":"\#909737"},\
+  {"full_text": "W▼ ${downspeed wlp7s0} ", "color":"\#909737"},\
 
 # Upload
-  {"full_text": "W▲ ${upspeed wlan0} ", "color":"\#909737"},\
+  {"full_text": "W▲ ${upspeed wlp7s0} ", "color":"\#909737"},\
 
 # eth0
 # Download
-  {"full_text": "▼ ${downspeed eth0} ", "color":"\#909737"},\
+  {"full_text": "▼ ${downspeed enp13s0} ", "color":"\#909737"},\
 
 # Upload
-  {"full_text": "▲ ${upspeed eth0} ", "color":"\#909737"},\
+  {"full_text": "▲ ${upspeed enp13s0} ", "color":"\#909737"},\
 
 # Memory
   {"full_text": "mem: ${memperc}% ", "color":"\#909737"},\
