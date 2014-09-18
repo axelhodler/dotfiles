@@ -5,6 +5,9 @@ alias dual='xrandr --output LVDS1 --off --output HDMI1 --crtc 0 --mode 1920x1080
 alias dual2='xrandr --output LVDS1 --off --output HDMI1 --crtc 0 --mode 1920x1080 --right-of VGA2'
 alias homedual='xrandr --output LVDS1 --off --output HDMI1 --crtc 0 --mode 1280x1024 --right-of VGA1'
 
+alias nboff='xrandr --output LVDS1 --off'
+alias nbon='xrandr --output LVDS1 --mode 1600x900 --left-of VGA1'
+
 # Backlight
 alias xbi='xbacklight -inc 10'
 alias xbd='xbacklight -dec 10'
