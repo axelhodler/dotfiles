@@ -1,6 +1,6 @@
 ! reload via: xrdb ~/.Xresources
 URxvt.scrollBar: off
-URxvt.font: xft:Terminus:pixelsize=14
+URxvt.font: xft:monaco:bold:size=10
 
 ! euphrasia fg/bg
 URxvt*background: #000000
@@ -51,9 +51,9 @@ URxvt.matcher.button:   1
 
 ! Perl extensions
 ! See: https://github.com/muennich/urxvt-perls
-URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
+URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select,matcher
 ! URL-SELECT
-URxvt.url-select.launcher:  firefox
+URxvt.url-select.launcher:  chromium
 URxvt.url-select.underline: true
 ! exit via M-q
 URxvt.keysym.M-u:           perl:url-select:select_next
