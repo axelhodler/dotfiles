@@ -51,7 +51,7 @@ URxvt.matcher.button:   1
 
 ! Perl extensions
 ! See: https://github.com/muennich/urxvt-perls
-URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select,matcher
+URxvt.perl-ext-common:      default,selection-to-clipboard,url-select,keyboard-select,matcher
 ! URL-SELECT
 URxvt.url-select.launcher:  chromium
 URxvt.url-select.underline: true
@@ -59,7 +59,3 @@ URxvt.url-select.underline: true
 URxvt.keysym.M-u:           perl:url-select:select_next
 URxvt.keysym.M-Escape:      perl:keyboard-select:activate
 URxvt.keysym.M-s:           perl:keyboard-select:search
-
-! CLIPBOARD stuff
-URxvt.keysym.M-c:   perl:clipboard:copy
-URxvt.keysym.C-v:   perl:clipboard:paste
