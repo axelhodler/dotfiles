@@ -1,7 +1,9 @@
 ;; Interactively Do Things
 (require 'ido)
 
-;; add the marmelade repository
+(setq-default show-trailing-whitespace t)
+
+;; add the extra repositories
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
@@ -20,6 +22,11 @@
 ;; use two spaces instead of four indentation in js-mode (used for .json files)
 (setq js-indent-level 2)
 
+(add-to-list 'load-path "~/.emacs.d/")
+
+(require 'rainbow-delimiters)
+(add-hook 'js2-mode-hook 'rainbow-delimiters-mode)
+
 ;; use js2-mode for .js files
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
@@ -27,13 +34,6 @@
 ;; eg. extract function with `C-c C-m ef`.
 (js2r-add-keybindings-with-prefix "C-c C-m")
 
-;; company-mode
-(require 'company)
-(require 'company-go)
-;; use the company-go backend only
-(add-hook 'go-mode-hook (lambda ()
-                          (set (make-local-variable 'company-backends) '(company-go))
-                          (company-mode)))
 ;; autocomplete
 ;; concerning javascript you need to copy javascript-mode to js-mode since
 ;; emacs seems to use js-mode by default and AC will therefore try to use
@@ -52,7 +52,7 @@
 (require 'yasnippet) ;; not yasnippet-bundle
 (yas-global-mode 1)
 ;; Load the snippet files themselves
-(yas/load-directory "~/.emacs.d/elpa/yasnippet-0.8.0/snippets")
+(yas/load-directory "~/.emacs.d/elpa/yasnippet-20140911.312/snippets")
 ;; Let's have snippets in the auto-complete dropdown
 (add-to-list 'ac-sources 'ac-source-yasnippet)
 
