@@ -44,8 +44,7 @@ alias m='mpv'
 alias getip='curl -s icanhazip.com'
 
 # directories
-alias mu='cd /mnt/3tb/musik'
-alias tor='cd /mnt/3tb/torrent'
+alias tor='cd /mnt/extra/torrent'
 
 # current projects
 alias pinc='cd ~/devel/pinbird-client'
@@ -74,3 +73,4 @@ alias js='jekyll serve -w'
 
 # Misc
 alias copy='xclip -selection c'
+alias fu='sudo $(history -p \!\!)'
