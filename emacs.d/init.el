@@ -5,6 +5,8 @@
 
 (setq-default show-trailing-whitespace t)
 
+(set-face-attribute 'default nil :height 110)
+
 ;; add the extra repositories
 (require 'package)
 (add-to-list 'package-archives
