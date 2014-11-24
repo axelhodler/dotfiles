@@ -1,3 +1,5 @@
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
+
 ;; Interactively Do Things
 (require 'ido)
 
@@ -22,8 +24,6 @@
 ;; use two spaces instead of four indentation in js-mode (used for .json files)
 (setq js-indent-level 2)
 
-(add-to-list 'load-path "~/.emacs.d/")
-
 (require 'rainbow-delimiters)
 (add-hook 'js2-mode-hook 'rainbow-delimiters-mode)
 
@@ -34,12 +34,17 @@
 ;; eg. extract function with `C-c C-m ef`.
 (js2r-add-keybindings-with-prefix "C-c C-m")
 
+(add-hook 'js-mode-hook (lambda () (tern-mode t)))
+(eval-after-load 'tern
+   '(progn
+      (require 'tern-auto-complete)
+      (tern-ac-setup)))
+
 ;; autocomplete
 ;; concerning javascript you need to copy javascript-mode to js-mode since
 ;; emacs seems to use js-mode by default and AC will therefore try to use
 ;; the js-mode dict
 (require 'auto-complete-config)
-(add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-1.4/dict")
 (setq-default ac-sources (add-to-list 'ac-sources 'ac-source-dictionary))
 (global-auto-complete-mode t)
