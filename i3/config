@@ -78,28 +78,28 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1:browser
-bindsym $mod+2 workspace 2:music
-bindsym $mod+3 workspace 3:devel
-bindsym $mod+4 workspace 4:four
-bindsym $mod+5 workspace 5:five
-bindsym $mod+6 workspace 6:six
-bindsym $mod+7 workspace 7:seven
-bindsym $mod+8 workspace 8:eight
-bindsym $mod+9 workspace 9:nine
-bindsym $mod+0 workspace 10:trrnt
+bindsym $mod+1 workspace " 一 "
+bindsym $mod+2 workspace " 二 "
+bindsym $mod+3 workspace " 三 "
+bindsym $mod+4 workspace " 四 "
+bindsym $mod+5 workspace " 五 "
+bindsym $mod+6 workspace " 六 "
+bindsym $mod+7 workspace " 七 "
+bindsym $mod+8 workspace " 八 "
+bindsym $mod+9 workspace " 九 "
+bindsym $mod+0 workspace " 〇 "
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1:browser
-bindsym $mod+Shift+2 move container to workspace 2:music
-bindsym $mod+Shift+3 move container to workspace 3:devel
-bindsym $mod+Shift+4 move container to workspace 4:four
-bindsym $mod+Shift+5 move container to workspace 5:five
-bindsym $mod+Shift+6 move container to workspace 6:six
-bindsym $mod+Shift+7 move container to workspace 7:seven
-bindsym $mod+Shift+8 move container to workspace 8:eight
-bindsym $mod+Shift+9 move container to workspace 9:nine
-bindsym $mod+Shift+0 move container to workspace 10:trrnt
+bindsym $mod+Shift+1 move container to workspace " 一 "
+bindsym $mod+Shift+2 move container to workspace " 二 "
+bindsym $mod+Shift+3 move container to workspace " 三 "
+bindsym $mod+Shift+4 move container to workspace " 四 "
+bindsym $mod+Shift+5 move container to workspace " 五 "
+bindsym $mod+Shift+6 move container to workspace " 六 "
+bindsym $mod+Shift+7 move container to workspace " 七 "
+bindsym $mod+Shift+8 move container to workspace " 八 "
+bindsym $mod+Shift+9 move container to workspace " 九 "
+bindsym $mod+Shift+0 move container to workspace " 〇 "
 
 # reload the configuration file
 bindsym $mod+Shift+q reload

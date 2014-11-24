@@ -18,36 +18,47 @@ TEXT
 # Highlight
   {"full_text": "${execi 30 tail -1 /home/xorrr/dotfiles/scripts/hilight} ${execi 30 python /home/xorrr/dotfiles/scripts/refresher.py}", "color":"\#ffff00"},
 
+#  {"full_text": "${addr wlp6s0}", "color":"\#FFFFFF"},\
 # wlan0
+  {"full_text":"${wireless_essid wlp6s0}","color":"\#909737", "separator":false},\
+  {"full_text": "${wireless_link_qual_perc wlp6s0}", "color":"\#FFFFFF"},\
 # Download
-  {"full_text": "W▼ ${downspeed wlp7s0} ", "color":"\#909737"},\
+  {"full_text":"W▼","color":"\#909737", "separator":false},\
+  {"full_text": "${downspeed wlp6s0} ", "color":"\#FFFFFF"},\
 
 # Upload
-  {"full_text": "W▲ ${upspeed wlp7s0} ", "color":"\#909737"},\
+  {"full_text":"W▲","color":"\#909737", "separator":false},\
+  {"full_text": "${upspeed wlp6s0} ", "color":"\#FFFFFF"},\
 
 # eth0
 # Download
-  {"full_text": "▼ ${downspeed enp13s0} ", "color":"\#909737"},\
+  {"full_text":"E▼","color":"\#909737", "separator":false},\
+  {"full_text": "${downspeed enp13s0} ", "color":"\#FFFFFF"},\
 
 # Upload
-  {"full_text": "▲ ${upspeed enp13s0} ", "color":"\#909737"},\
+  {"full_text":"E▲","color":"\#909737", "separator":false},\
+  {"full_text": "${upspeed enp13s0} ", "color":"\#FFFFFF"},\
 
 # Memory
-  {"full_text": "mem: ${memperc}% ", "color":"\#909737"},\
+  {"full_text":"mem","color":"\#909737", "separator":false},\
+  {"full_text": "${memperc}% ", "color":"\#FFFFFF"},\
 
 # CPU
-  {"full_text": "cpu: ${cpu}% ", "color":"\#909737"},\
+  {"full_text":"cpu","color":"\#909737", "separator":false},\
+  {"full_text": "${cpu}% ", "color":"\#FFFFFF"},\
 
 # Weather
-  {"full_text": "☀ ${execi 300 /home/xorrr/dotfiles/scripts/weather.sh 'EUR|DE|GM001|Stuttgart'}","color":"\#909737"},\
+  {"full_text":"☀","color":"\#909737", "separator":false},\
+  {"full_text": "${execi 300 /home/xorrr/dotfiles/scripts/weather.sh 'EUR|DE|GM001|Stuttgart'}","color":"\#FFFFFF"},\
 
 # Battery
-  {"full_text":"ϟ ${battery_percent BAT0}","color":"\#909737"},\
+  {"full_text":"ϟ","color":"\#909737", "separator":false},\
+  {"full_text":"${battery_percent BAT0}","color":"\#FFFFFF"},\
 
 # Volume:
-  {"full_text":"VOL","color":"\#545454","separator":false,"separator_block_width":6},\
-  {"full_text":"${execi 1 amixer sget Master,0 | egrep -o '([0-9]+%|\[(on|off)\])' | sed ':a;N;$!ba;s/\n/ /g'}","color":"\#909737","separator":false},\
+  {"full_text":"VOL","color":"\#909737", "separator":false},\
+  {"full_text":"${execi 1 amixer sget Master,0 | egrep -o '([0-9]+%|\[(on|off)\])' | sed ':a;N;$!ba;s/\n/ /g'}","color":"\#FFFFFF","separator":false},\
 
 # Time
-  {"full_text": "${time %a %d %b} ${time %H:%M:%S} ","color": "\#909737"}
+  {"full_text": "${time %a %d %b} ${time %H:%M:%S} ","color": "\#FFFFFF"}
 ]
