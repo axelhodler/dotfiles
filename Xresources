@@ -1,6 +1,6 @@
 ! reload via: xrdb ~/.Xresources
 URxvt.scrollBar: off
-URxvt.font: xft:monaco:bold:size=10
+URxvt.font: xft:Droid Sans Mono:size=11
 
 ! euphrasia fg/bg
 URxvt*background: #000000
