@@ -44,7 +44,7 @@ alias m='mpv'
 alias getip='curl -s icanhazip.com'
 
 # directories
-alias tor='cd /mnt/extra/torrent'
+alias to='cd /mnt/extra/torrent'
 
 # current projects
 alias pinc='cd ~/devel/pinbird-client'
