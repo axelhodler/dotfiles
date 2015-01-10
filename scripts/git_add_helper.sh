@@ -8,8 +8,16 @@ while read line; do
   files+=("$filename")
 done < <(git status --porcelain)
 
+patch=false
+
 # add chosen files
 for filenumber in "$@"
   do
-    git add ${files[$filenumber]}
+    if [[ "$patch" = true ]]; then
+      git add -p ${files[$filenumber]}
+    elif [[ "$1" == "-p" ]]; then
+      patch=true
+    else
+      git add ${files[$filenumber]}
+    fi
   done
