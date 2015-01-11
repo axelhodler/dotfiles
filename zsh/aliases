@@ -47,6 +47,8 @@ alias getip='curl -s icanhazip.com'
 
 # directories
 alias to='cd /mnt/extra/torrent'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 # current projects
 alias pinc='cd ~/devel/pinbird-client'
