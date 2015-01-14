@@ -1,50 +1,57 @@
 ! reload via: xrdb ~/.Xresources
 URxvt.scrollBar: off
-URxvt.font: xft:Droid Sans Mono:size=11
+URxvt.font: xft:Droid Sans Mono:size=15
 
-! euphrasia fg/bg
-URxvt*background: #000000
-URxvt*foreground: #E6E6E6
-URxvt*cursorColor: #1AAA13
+!TomorrowNightBright
+#define t_background        #000000
+#define t_current_line      #2a2a2a
+#define t_selection      	#424242
+#define t_foreground      	#eaeaea
+#define t_comment	     	#969896
+#define t_red		     	#d54e53
+#define t_orange	     	#e78c45
+#define t_yellow        	#e7c547
+#define t_green	        	#b9ca4a
+#define t_aqua	        	#70c0b1
+#define t_blue	        	#7aa6da
+#define t_purple        	#c397d8
 
-! X.org apps bg/fg
-*background: #D0CECB
-*foreground: #090C19
 
-! Colors
-*cursorColor: #93a1a1
+*.foreground:   t_foreground
+*.background:   t_background
+*.cursorColor:  #aeafad
 
-!! black dark/light
-*color0: #121212
-*color8: #2e3436
+! Black / Grey
+*.color0:       #000000
+*.color8:       #666666
 
-!! red dark/light
-*color1: #a35b66
-*color9: #ab6b74
+! Red / Bright Red
+*.color1:       t_red
+*.color9:       #FF3334
 
-!! green dark/light
-*color2: #99ab6f
-*color10: #acb972
+! Green + Bright Green
+*.color2:       t_green
+*.color10:      #9ec400
 
-!! yellow dark/light
-*color3: #ca9733
-*color11: #ccaa69
+! Yellow (Orange) + Bright Yellow (Yellow)
+*.color3:       t_orange
+*.color11:      t_yellow
 
-!! blue dark/light
-*color4: #495d6e
-*color12: #687987
+! Blue + Bright Blue
+*.color4:       t_blue
+*.color12:      t_blue
 
-!! magenta dark/light
-*color5: #825969
-*color13: #977381
+! Magenta (Purple) + Bright Magenta
+*.color5:       t_purple
+*.color13:      #b777e0
 
-!! cyan dark/light
-*color6: #839191
-*color14: #98a4a4
+! Cyan (Aqua) + Bright Cyan
+*.color6:       t_aqua
+*.color14:      #54ced6
 
-!! white dark/light
-*color7: #e0e0e0
-*color15: #e5e5e5
+! Light Grey (Selection) + White (Current Line)
+*.color7:       t_selection
+*.color15:      t_current_line
 
 ! ?????
 URxvt.matcher.button:   1
