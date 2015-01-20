@@ -2,11 +2,7 @@
 
 files=()
 
-# gather files
-while read line; do
-  filename=$(echo "$line" | sed -e "s#^.*[[:space:]]##g")
-  files+=("$filename")
-done < <(git status --porcelain)
+source ~/dotfiles/scripts/git_helper_statusreader.sh
 
 patch=false
 
