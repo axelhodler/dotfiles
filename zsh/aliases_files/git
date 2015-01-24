@@ -1,6 +1,7 @@
 alias gic='git commit -m'
-alias gcu='git checkout --'
-alias grh='git reset HEAD'
+alias gco='git checkout'
 
 alias gis='~/dotfiles/scripts/git_status_helper.sh'
 alias gia='~/dotfiles/scripts/git_add_helper.sh'
+alias grh='~/dotfiles/scripts/git_reset_helper.sh'
+alias gud='~/dotfiles/scripts/git_checkout_helper.sh'
