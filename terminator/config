@@ -1,0 +1,13 @@
+[global_config]
+  inactive_color_offset = 1
+[profiles]
+  [[default]]
+    scrollbar_position = disabled
+    use_system_font = False
+    font = Monaco for Powerline 12
+    show_titlebar = False
+    # tomorrow theme night-bright
+    palette = "#000000:#d54e53:#b9ca4a:#e78c45:#7aa6da:#c397d8:#70c0b1:#424242:#666666:#FF3334:#9ec400:#e7c547:#7aa6da:#b777e0:#54ced6:#2a2a2a"
+    foreground_color = "#eaeaea"
+    background_color = "#000000"
+    cursor_color = "#aeafad"
