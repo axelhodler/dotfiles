@@ -90,5 +90,4 @@
 
 (load "~/.emacs.d/init_look_and_feel.el")
 (load "~/.emacs.d/init_keybinding.el")
-(load "~/.emacs.d/init_linux_custom.el")
 (load "~/.emacs.d/init_osx_custom.el")
