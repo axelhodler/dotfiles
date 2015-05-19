@@ -85,6 +85,9 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+;; size
+(set-face-attribute 'default nil :height 150)
+
 (load "~/.emacs.d/init_look_and_feel.el")
 (load "~/.emacs.d/init_keybinding.el")
 (load "~/.emacs.d/init_linux_custom.el")
