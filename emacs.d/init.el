@@ -3,6 +3,7 @@
 ;; Interactively Do Things
 (require 'ido)
 
+(require 'neotree)
 (setq-default show-trailing-whitespace t)
 
 (set-face-attribute 'default nil :height 110)
