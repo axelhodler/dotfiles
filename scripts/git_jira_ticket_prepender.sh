@@ -8,4 +8,4 @@ branchname=$(git rev-parse --abbrev-ref HEAD)
 # if branches are called feature/relution/MDM-1337
 ticketid=$(echo $branchname | cut -f3 -d"/")
 
-git commit -m "$ticketid $commit_msg"
+git commit -m "$ticketid: $commit_msg"
