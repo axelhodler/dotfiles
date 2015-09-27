@@ -1,9 +1,11 @@
 alias gco='git checkout'
-
+alias grhs='git reset HEAD~1 --soft'
+alias gcb='git checkout -b'
 alias gib='git checkout -'
 alias gim='git merge --no-ff'
-alias grb='git rebase'
+alias grm='git rebase master'
 alias gpo='git push origin'
+alias gpoh='git push origin HEAD'
 
 alias gis='~/dotfiles/scripts/git_status_helper.sh'
 alias gia='~/dotfiles/scripts/git_add_helper.sh'
