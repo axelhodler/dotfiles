@@ -1,4 +1,3 @@
-alias gic='git commit -m'
 alias gco='git checkout'
 
 alias gib='git checkout -'
@@ -11,3 +10,4 @@ alias gia='~/dotfiles/scripts/git_add_helper.sh'
 alias grh='~/dotfiles/scripts/git_reset_helper.sh'
 alias gud='~/dotfiles/scripts/git_checkout_helper.sh'
 alias gict='~/dotfiles/scripts/git_jira_ticket_prepender.sh'
+alias gic='~/dotfiles/scripts/git_commit_helper.sh'
