@@ -9,7 +9,7 @@ branchname=$(git rev-parse --abbrev-ref HEAD)
 # if the branchname contains a "/" we suspect a ticketid after it
 if [[ $branchname == *"/"* ]]
 then
-  ticketid=$(echo $branchname | cut -f2 -d"/")
+  ticketid=$(echo $branchname | cut -f2 -d"/" | cut -d "_" -f1)
   commit_msg="$ticketid: $commit_msg"
 fi
 
