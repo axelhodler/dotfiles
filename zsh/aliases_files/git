@@ -6,6 +6,8 @@ alias gim='git merge --no-ff'
 alias grm='git rebase master'
 alias gpo='git push origin'
 alias gpoh='git push origin HEAD'
+alias ggo='git pull origin master'
+alias gil='git lg'
 
 alias gis='~/dotfiles/scripts/git_status_helper.sh'
 alias gia='~/dotfiles/scripts/git_add_helper.sh'
