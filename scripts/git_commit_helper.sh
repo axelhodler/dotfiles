@@ -10,7 +10,10 @@ branchname=$(git rev-parse --abbrev-ref HEAD)
 if [[ $branchname == *"/"* ]]
 then
   ticketid=$(echo $branchname | cut -f2 -d"/" | cut -d "_" -f1)
-  commit_msg="$ticketid: $commit_msg"
+  if [[ $ticketid == *"-"* ]] # if it does not contain a - its probably ot a ticket
+  then
+    commit_msg="$ticketid: $commit_msg"
+  fi
 fi
 
 # check if correct commit message length is used
