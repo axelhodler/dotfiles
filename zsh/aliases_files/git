@@ -8,6 +8,7 @@ alias gpo='git push origin'
 alias gpoh='git push origin HEAD'
 alias ggo='git pull origin master'
 alias gl='git lg'
+alias gbd='git branch -D'
 
 alias gs='~/dotfiles/scripts/git_status_helper.sh'
 alias ga='~/dotfiles/scripts/git_add_helper.sh'
