@@ -11,8 +11,10 @@ if [[ "$1" == "-p" ]]; then
 fi
 
 # add the single file
-if [[ ${#files[@]} == 1 ]]; then
+if [[ ${#files[@]} == 1 && "$patch" = true ]]; then
   git add -p ${files[0]}
+elif [[ ${#files[@]} == 1 ]]; then
+  git add ${files[0]}
 # check which files to add
 else
   for filenumber in "$@"
