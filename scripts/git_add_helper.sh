@@ -6,8 +6,12 @@ source ~/dotfiles/scripts/git_helper_statusreader.sh
 
 patch=false
 
-# add chosen files
-for filenumber in "$@"
+# add the single file
+if [[ ${#files[@]} == 1 ]]; then
+  git add -p ${files[0]}
+# check which files to add
+else
+  for filenumber in "$@"
   do
     if [[ "$patch" = true ]]; then
       git add -p ${files[$filenumber]}
@@ -17,3 +21,4 @@ for filenumber in "$@"
       git add ${files[$filenumber]}
     fi
   done
+fi
