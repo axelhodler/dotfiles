@@ -19,6 +19,10 @@ elif [[ ${#files[@]} == 1 ]]; then
 else
   for filenumber in "$@"
   do
+    if [[ $filenumber = "-p" ]]; then
+      continue
+    fi
+
     if [[ "$patch" = true ]]; then
       git add -p ${files[$filenumber]}
     else
