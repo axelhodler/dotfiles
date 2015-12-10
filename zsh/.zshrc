@@ -18,3 +18,5 @@ unsetopt correct
 source ~/dotfiles/zsh/zpreztorc
 
 source ~/dotfiles/zsh/aliases
+
+source ~/dotfiles/scripts/helper_functions.sh
