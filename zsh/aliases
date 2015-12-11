@@ -78,3 +78,4 @@ alias js='jekyll serve -w'
 # Misc
 alias copy='xclip -selection c'
 alias fu='sudo $(history -p \!\!)'
+alias beacons='ll /dev/tty.usbmodem*'
