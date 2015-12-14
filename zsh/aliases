@@ -80,5 +80,8 @@ alias copy='xclip -selection c'
 alias fu='sudo $(history -p \!\!)'
 alias beacons='ll /dev/tty.usbmodem*'
 alias cwd='pwd | pbcopy'
-alias fhere='find . -name '
 alias psg='ps aux | grep -v grep | grep -i -e VSZ -e'
+
+# find
+alias fhere='find . -name '
+alias flinks='find . -type l -ls'
