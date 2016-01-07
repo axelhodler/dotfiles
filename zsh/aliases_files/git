@@ -6,7 +6,7 @@ alias gim='git merge --no-ff'
 alias grm='git rebase master'
 alias gpo='git push origin'
 alias gpoh='git push origin HEAD'
-alias ggo='git pull origin master'
+alias ggo='git pull origin master --ff-only'
 alias gl='git lg'
 alias gbd='git branch -D'
 
