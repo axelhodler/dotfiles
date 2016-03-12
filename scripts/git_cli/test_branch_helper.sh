@@ -21,6 +21,14 @@ sh fixture.sh
 
 (
   cd test-repo
+  [ `sh ../git_list_branches.sh | grep a_branch | cut -c1-3` == "[0]" ] || flunk "Branch was not prepended with id"
+  [ `sh ../git_list_branches.sh | grep b_branch | cut -c1-3` == "[1]" ] || flunk "Branch was not prepended with id"
+)
+
+sh fixture.sh
+
+(
+  cd test-repo
   sh ../git_branch_del.sh 1
   [ `git branch | wc -l` == "2" ] || flunk "No branch was deleted"
   [ `git branch | grep b_branch | wc -l` == "0" ] || flunk "Specified branch was not deleted"
