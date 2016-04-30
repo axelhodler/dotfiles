@@ -30,3 +30,5 @@ else
     fi
   done
 fi
+
+~/dotfiles/scripts/git_status_helper.sh

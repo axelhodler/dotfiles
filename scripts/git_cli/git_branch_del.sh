@@ -18,3 +18,5 @@ for branchid in "$@"
 do
   git branch -d ${branches[$branchid]}
 done
+
+~/dotfiles/scripts/git_status_helper.sh

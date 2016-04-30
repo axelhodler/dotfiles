@@ -26,3 +26,5 @@ else
   chars_over_max=$(expr $used_characters - $MAX_CHARACTERS)
   printf "The chosen commit message contains $chars_over_max chars too much.\nPlease choose a shorter message\n"
 fi
+
+~/dotfiles/scripts/git_status_helper.sh
