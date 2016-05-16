@@ -19,25 +19,13 @@ alias m='mpv'
 alias getip='curl -s icanhazip.com'
 
 # directories
-alias to='cd /mnt/extra/torrent'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-# current projects
-alias pinc='cd ~/devel/pinbird-client'
-alias pins='cd ~/workspace/pinbird'
-alias no='cd ~/devel/notesdude'
 # python
 # Virtual Environment stuff
 alias ve='source .env/bin/activate'
 alias de='deactivate'
-
-# Devel
-alias ru='./bin/run.sh'
-alias rut='./bin/run_tests.sh'
-alias ruit='./bin/run_integration_tests.sh'
-alias rukt='./bin/run_karma_tests.sh'
-alias js='jekyll serve -w'
 
 # Misc
 alias fu='sudo $(history -p \!\!)'
