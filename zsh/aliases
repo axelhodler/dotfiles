@@ -36,7 +36,7 @@ alias e='emacs -nw'
 alias ev='evince'
 alias am='alsamixer'
 alias pm='pacman'
-alias ll='ls -la'
+alias ll='ls -lah'
 alias lo='slock'
 alias pc='pass -c'
 
