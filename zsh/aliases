@@ -37,7 +37,6 @@ alias ev='evince'
 alias am='alsamixer'
 alias pm='pacman'
 alias ll='ls -la'
-alias t='touch'
 alias lo='slock'
 alias pc='pass -c'
 
