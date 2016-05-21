@@ -2,3 +2,4 @@
 *\#*
 scripts/hilight
 test-repo/
+npm-debug.log*
