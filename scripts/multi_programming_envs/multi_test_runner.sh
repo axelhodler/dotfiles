@@ -1,5 +1,8 @@
 #!/bin/sh
 
-set -v # prints invoked commands
+set -v
 
-npm test
+if [ -f package.json ];
+then
+  npm test
+fi
