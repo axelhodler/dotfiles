@@ -36,3 +36,6 @@ alias t='~/dotfiles/scripts/multi_programming_envs/multi_test_runner.sh'
 # find
 alias fhere='find . -name '
 alias flinks='find . -type l -ls'
+
+# OSX
+alias ip='ifconfig | grep inet | awk "NR==5{print \$2}"'
