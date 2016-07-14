@@ -16,7 +16,7 @@ read_branches
 
 for branchid in "$@"
 do
-  git branch -d ${branches[$branchid]}
+  git branch -D ${branches[$branchid]}
 done
 
 ~/dotfiles/scripts/git_status_helper.sh
