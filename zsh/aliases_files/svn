@@ -1,0 +1,8 @@
+# svn
+alias ss='svn status'
+alias slg='svn log -l 10'
+alias sa='svn add'
+alias sd='svn diff'
+alias sr='svn revert'
+alias srr='svn revert --recursive'
+alias sc='svn commit'

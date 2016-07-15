@@ -1,14 +1,5 @@
 source ~/dotfiles/zsh/aliases_files/git
 
-# svn
-alias ss='svn status'
-alias slg='svn log -l 10'
-alias sa='svn add'
-alias sd='svn diff'
-alias sr='svn revert'
-alias srr='svn revert --recursive'
-alias sc='svn commit'
-
 # shortened
 alias s='sudo'
 alias e='emacs -nw'
