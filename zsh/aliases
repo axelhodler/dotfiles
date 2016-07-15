@@ -7,6 +7,7 @@ alias ll='ls -lah'
 
 # extra
 alias m='mpv'
+alias mp='mpv *.rar'
 alias getip='curl -s icanhazip.com'
 
 # directories
@@ -17,6 +18,9 @@ alias ....='cd ../../..'
 # Virtual Environment stuff
 alias ve='source .env/bin/activate'
 alias de='deactivate'
+
+# node
+alias nr='npm run'
 
 # Misc
 alias fu='sudo $(history -p \!\!)'
