@@ -1,11 +1,11 @@
 # customized robbyrussel theme
 local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
-PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
+PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_time_since_commit)$(git_prompt_info)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
+ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[yellow]%}✗"
+ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 # Got from https://gist.github.com/Goles/1990882
 # Add this to your .oh-my-zsh theme if you're using those, or directly to your zsh theme :)
@@ -57,11 +57,11 @@ function git_time_since_commit() {
             fi
 
             if [ "$HOURS" -gt 24 ]; then
-                echo "($COLOR${DAYS}d${SUB_HOURS}h${SUB_MINUTES}m%{$reset_color%})"
+                echo "$COLOR${DAYS}d${SUB_HOURS}h${SUB_MINUTES}m%{$reset_color%}|"
             elif [ "$MINUTES" -gt 60 ]; then
-                echo "($COLOR${HOURS}h${SUB_MINUTES}m%{$reset_color%})"
+                echo "$COLOR${HOURS}h${SUB_MINUTES}m%{$reset_color%}|"
             else
-                echo "($COLOR${MINUTES}m%{$reset_color%})"
+                echo "$COLOR${MINUTES}m%{$reset_color%}|"
             fi
         fi
     fi
