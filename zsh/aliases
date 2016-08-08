@@ -40,5 +40,10 @@ mcd() {
   command mkdir $1 && cd $1
 }
 
+# List contents after changing dirs
+function chpwd() {
+  ll
+}
+
 # OSX
 alias ip='ifconfig | grep inet | awk "NR==5{print \$2}"'
