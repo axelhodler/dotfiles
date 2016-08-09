@@ -1,0 +1,12 @@
+# ~/.tmuxinator/home.yml
+
+name: home
+root: ~/
+
+windows:
+  - home: 
+  - notes: cd ~/notes
+  - devel1: cd ~/devel
+  - devel2: cd ~/devel
+  - notes: cd ~/notes
+  - irc: irssi
