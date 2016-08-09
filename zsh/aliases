@@ -4,6 +4,8 @@ source ~/dotfiles/zsh/aliases_files/git
 alias s='sudo'
 alias e='emacs -nw'
 alias ll='ls -lah'
+alias v='vi'
+alias rf='rm -rf'
 
 # extra
 alias m='mpv'
