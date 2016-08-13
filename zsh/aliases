@@ -9,7 +9,7 @@ alias rf='rm -rf'
 
 # extra
 alias m='mpv'
-alias mp='mpv *.rar'
+alias mp='mpv --fs *.rar'
 alias getip='curl -s icanhazip.com'
 
 # directories
