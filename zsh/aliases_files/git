@@ -7,7 +7,7 @@ alias giml='git merge --no-ff @{-1}'
 alias grm='git rebase master'
 alias gpo='git push origin'
 alias gpoh='git push origin HEAD'
-alias ggo='git pull origin master --ff-only'
+alias ggo='git pull origin HEAD --ff-only'
 alias glf='git lg'
 alias gl='git lg | head -n 10'
 
