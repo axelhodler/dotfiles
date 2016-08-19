@@ -50,3 +50,4 @@ function chpwd() {
 
 # OSX
 alias ip='ifconfig | grep inet | awk "NR==5{print \$2}"'
+alias uuid='uuidgen | pbcopy'
