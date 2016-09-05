@@ -44,6 +44,11 @@ set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
+" Color
+:set t_Co=256 " 256 colors
+:set background=dark
+:color grb256
+
 " Write after leaving insertmode
 autocmd InsertLeave * write
 
