@@ -45,16 +45,6 @@ mcd() {
   command mkdir $1 && cd $1
 }
 
-# Learning
-rm() {
-  if [[ $1 == "-rf" ]]; then
-    echo "use rf!"
-    command rm -rf "$2"
-  else
-    command rm "$@"
-  fi
-}
-
 # List contents after changing dirs
 function chpwd() {
   ll
