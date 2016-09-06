@@ -24,6 +24,8 @@ alias de='deactivate'
 # node
 alias nr='npm run'
 
+alias ese='ember server --proxy http://localhost:3000'
+
 # Misc
 alias jqp="jq '.'"
 alias fu='sudo $(history -p \!\!)'
