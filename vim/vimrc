@@ -65,3 +65,7 @@ autocmd BufWritePre     * :call TrimWhiteSpace()
 
 " Remap ; to :
 nnoremap ; :
+
+" use jj to switch modes
+:imap jj <Esc>
+
