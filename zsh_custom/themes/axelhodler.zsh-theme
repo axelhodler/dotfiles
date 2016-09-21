@@ -68,3 +68,6 @@ function git_time_since_commit() {
 }
 
 # Just add $(git_time_since_commit) to your ZSH PROMPT and you're set
+
+# Add line across entire width of terminal after command output
+precmd() { printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' - }
