@@ -69,3 +69,4 @@ nnoremap ; :
 " use jj to switch modes
 :imap jj <Esc>
 
+execute pathogen#infect()
