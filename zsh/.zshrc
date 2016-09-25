@@ -41,6 +41,9 @@ export PATH="/usr/local/sbin:$PATH"
 # add ~/bin folder
 export PATH="/Users/axel/bin:$PATH"
 
+# haskell stuff
+export PATH="/Users/axel/.local/bin:$PATH"
+
 export NVM_DIR="/Users/axel/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
