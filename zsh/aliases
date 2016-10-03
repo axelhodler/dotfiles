@@ -25,7 +25,7 @@ alias de='deactivate'
 alias nr='npm run'
 
 alias ese='ember server --proxy http://localhost:3000'
-alias tt='./node_modules/teenytest/bin/teenytest "src/**/*_test.js"'
+alias tt='./node_modules/teenytest/bin/teenytest --helper src/testsupport/helper.js "src/**/*_test.js"'
 
 # Misc
 alias jqp="jq '.'"
