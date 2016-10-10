@@ -84,3 +84,5 @@ let g:syntastic_check_on_wq = 0
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 
 execute pathogen#infect()
+
+com! Formatjson %!python -m json.tool
