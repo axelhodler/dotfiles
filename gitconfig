@@ -5,7 +5,7 @@
 	ui = true
 	status = always
 [alias]
-  lg = "!source ~/.githelpers.sh && pretty_git_log"
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 [giggle]
 	main-window-maximized = false
