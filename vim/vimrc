@@ -86,3 +86,5 @@ autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 execute pathogen#infect()
 
 com! Formatjson %!python -m json.tool
+
+au Filetype python setl et ts=2 sw=2
