@@ -88,3 +88,9 @@ execute pathogen#infect()
 com! Formatjson %!python -m json.tool
 
 au Filetype python setl et ts=2 sw=2
+
+" remember last cursor position in file
+autocmd BufReadPost *
+  \ if line("'\"") > 0 && line("'\"") <= line("$") |
+  \   exe "normal g`\"" |
+  \ endif
