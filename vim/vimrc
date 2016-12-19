@@ -94,3 +94,9 @@ autocmd BufReadPost *
   \ if line("'\"") > 0 && line("'\"") <= line("$") |
   \   exe "normal g`\"" |
   \ endif
+
+map <Left> :echo "use l!"<cr>
+map <Right> :echo "use h!"<cr>
+map <Up> :echo "use k!"<cr>
+map <Down> :echo "use j!"<cr>
+map <Esc> :echo "use jj"<cr>
