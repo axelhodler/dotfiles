@@ -52,6 +52,8 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 " Write after leaving insertmode
 autocmd InsertLeave * write
 
+set autowrite
+
 " Removes trailing spaces
 function! TrimWhiteSpace()
   %s/\s\+$//e
