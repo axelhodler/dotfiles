@@ -44,6 +44,9 @@ export PATH="/Users/axel/bin:$PATH"
 # haskell stuff
 export PATH="/Users/axel/.local/bin:$PATH"
 
+# rust
+export PATH="/Users/axel/.multirust/toolchains/stable/cargo/bin:$PATH"
+
 export NVM_DIR="/Users/axel/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
