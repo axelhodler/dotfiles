@@ -16,6 +16,12 @@ then
   fi
 fi
 
+# if the branchname IS the ticketname
+if [[ $branchname == [A-Z]* ]]
+then
+   commit_msg="$branchname: $commit_msg"
+fi
+
 # check if correct commit message length is used
 used_characters=$(printf "$commit_msg" | wc -c)
 
