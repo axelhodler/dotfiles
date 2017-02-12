@@ -1,1 +1,5 @@
-{}
+{
+  "scripts": {
+    "test":"echo 'npm test' &>/dev/null"
+  }
+}
