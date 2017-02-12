@@ -44,6 +44,8 @@ export PATH="/Users/axel/bin:$PATH"
 # haskell stuff
 export PATH="/Users/axel/.local/bin:$PATH"
 
+export GOPATH="$HOME/go"
+
 # rust
 export PATH="/Users/axel/.multirust/toolchains/stable/cargo/bin:$PATH"
 
