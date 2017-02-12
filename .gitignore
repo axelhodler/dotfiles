@@ -3,3 +3,4 @@
 scripts/hilight
 test-repo/
 npm-debug.log*
+.stack-work
