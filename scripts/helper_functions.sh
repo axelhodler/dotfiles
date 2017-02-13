@@ -13,3 +13,7 @@ sshre () {
     RET="$?";sleep 1;
   done
 }
+
+ffind () {
+  find `pwd` -iname $1
+}
