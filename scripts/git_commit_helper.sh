@@ -16,8 +16,8 @@ then
   fi
 fi
 
-# if the branchname IS the ticketname
-if [[ $branchname == [A-Z]* ]]
+# if the branchname IS the ticketname and its not the first commit
+if [[ $branchname == [A-Z]* ]] && ! [[ $branchname == "HEAD" ]]
 then
    commit_msg="$branchname: $commit_msg"
 fi
