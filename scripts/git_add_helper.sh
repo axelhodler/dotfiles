@@ -15,6 +15,9 @@ if [[ ${#files[@]} == 1 && "$patch" = true ]]; then
   git add -p ${files[0]}
 elif [[ ${#files[@]} == 1 ]]; then
   git add ${files[0]}
+# user wants to add all with patch
+elif [[ "$2" == "." ]]; then
+  git add -p .
 # check which files to add
 else
   for filenumber in "$@"
