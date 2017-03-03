@@ -17,3 +17,7 @@ sshre () {
 ffind () {
   find `pwd` -iname $1
 }
+
+function dkf() {
+  docker ps | tail -n 1 | awk '{print $1}' | xargs docker kill | > /dev/null
+}
