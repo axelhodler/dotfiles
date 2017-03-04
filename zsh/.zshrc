@@ -31,6 +31,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/dotfiles/zsh/aliases_files/git
 source ~/dotfiles/zsh/aliases
 source ~/dotfiles/scripts/helper_functions.sh
+source ~/dotfiles/scripts/ethereum_helper_functions.sh
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
