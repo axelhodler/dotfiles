@@ -19,3 +19,7 @@ function gasPrice() {
 function accounts() {
   curl --silent -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_accounts","id":1}' localhost:8545 | jq .result
 }
+
+function unlockAccount() {
+  curl --data '{"method":"personal_unlockAccount","params":["'$1'","'$2'",null],"id":1,"jsonrpc":"2.0"}' -H "Content-Type: application/json" -X POST localhost:8545
+}
