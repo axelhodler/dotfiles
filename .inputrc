@@ -1,0 +1,4 @@
+# relevant for bash:
+# Edit command under cursor with vi
+set keymap vi-insert
+"\C-x\C-e": edit-and-execute-command
