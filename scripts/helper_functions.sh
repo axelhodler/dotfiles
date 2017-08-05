@@ -25,3 +25,7 @@ function dkf() {
 pre () {
   open -a Preview $@
 }
+
+field () {
+  awk "{print \$$1}"
+}
