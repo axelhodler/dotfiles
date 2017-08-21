@@ -9,3 +9,8 @@ if [ -f package.json ];
 then
   npm test
 fi
+
+if [ -f pom.xml ];
+then
+  mvn test
+fi
