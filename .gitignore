@@ -5,3 +5,4 @@ test-repo/
 npm-debug.log*
 .stack-work
 vim/.netrwhist
+.DS_Store
