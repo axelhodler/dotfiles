@@ -102,3 +102,6 @@ map <Right> :echo "use h!"<cr>
 map <Up> :echo "use k!"<cr>
 map <Down> :echo "use j!"<cr>
 map <Esc> :echo "use jj"<cr>
+
+" default filetype of json should not be js and thus makes validations work
+au BufRead,BufNewFile *.json set filetype=json
