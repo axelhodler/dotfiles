@@ -19,4 +19,4 @@ do
   git branch -D ${branches[$branchid]}
 done
 
-~/dotfiles/scripts/git_status_helper.sh
+~/dotfiles/scripts/git_cli/git_list_branches.sh
