@@ -13,6 +13,7 @@ alias gl='git lg | head -n 10'
 
 alias gs='~/dotfiles/scripts/git_status_helper.sh'
 alias ga='~/dotfiles/scripts/git_add_helper.sh'
+alias gaa='git add .'
 alias gap='~/dotfiles/scripts/git_add_helper.sh -p'
 alias gapa='~/dotfiles/scripts/git_add_helper.sh -p .'
 alias grh='~/dotfiles/scripts/git_reset_helper.sh'
