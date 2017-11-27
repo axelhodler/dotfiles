@@ -33,6 +33,9 @@ source ~/dotfiles/zsh/aliases
 source ~/dotfiles/scripts/helper_functions.sh
 source ~/dotfiles/scripts/ethereum_helper_functions.sh
 
+# switch between versions
+# export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+# export JAVA_HOME=`/usr/libexec/java_home -v 9`
 export JAVA_HOME=$(/usr/libexec/java_home)
 
 ### Added by the Heroku Toolbelt
