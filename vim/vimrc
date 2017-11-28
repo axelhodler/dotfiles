@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 set nocompatible                  " Must come first because it changes other options.
 
 set clipboard=unnamed             " make ops like yy D and P work with the clipboard
@@ -85,7 +87,6 @@ let g:syntastic_check_on_wq = 0
 
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 
-execute pathogen#infect()
 
 com! Formatjson %!python -m json.tool
 
