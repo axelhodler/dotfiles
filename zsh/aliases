@@ -56,3 +56,4 @@ function chpwd() {
 # OSX
 alias ip='ifconfig | grep inet | awk "NR==5{print \$2}"'
 alias uuid='uuidgen | xargs echo -n | pbcopy'
+alias idea='open -a "`ls -dt /Applications/IntelliJ\ IDEA*|head -1`"'
