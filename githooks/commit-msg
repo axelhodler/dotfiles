@@ -1,0 +1,9 @@
+#!/bin/sh
+
+commit_msg=`cat $1`
+output=`echo "$commit_msg" | grep 'ABC-1234: A'`
+if [ $? -eq 0 ]; then
+ exit 0
+fi
+
+exit 1
