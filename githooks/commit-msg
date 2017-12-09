@@ -1,9 +1,10 @@
 #!/bin/sh
 
-commit_msg=`cat $1`
-output=`echo "$commit_msg" | grep 'ABC-1234: A'`
+commit_msg=`cat $1` # reads .git/COMMIT_EDITMSG
+output=`echo "$commit_msg" | grep '^ABC-[0-9]+: [A-Za-z0-9]+[^.]$'`
 if [ $? -eq 0 ]; then
  exit 0
 fi
 
+echo "Commit message is not allowed"
 exit 1
