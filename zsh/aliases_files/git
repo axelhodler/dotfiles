@@ -1,6 +1,12 @@
 alias gco='git checkout'
 alias grhs='git reset HEAD~1 --soft'
 alias gcb='git checkout -b'
+alias gcm='git checkout master'
+
+gcbf() {
+  git checkout -b feature/$1
+}
+
 alias gib='git checkout -'
 alias gim='git merge --no-ff'
 alias giml='git merge --no-ff @{-1}'
