@@ -5,9 +5,14 @@ then
   stack repl <<< test
 fi
 
-if [ -f package.json ];
+if [ -f package.json ] && [ ! -f build.gradle ];
 then
   npm test
+fi
+
+if [ -f build.gradle ];
+then
+  ./gradlew test
 fi
 
 if [ -f pom.xml ];

@@ -22,6 +22,14 @@ flunk() {
 )
 
 (
+  cd gradle
+  sh ../multi_test_runner.sh > output 2>&1
+  [ `cat output | grep --count "npm test"` == 0 ] || flunk "npm test should not have been invoked in a gradle project"
+  [ `cat output | grep --count "mvn test"` == 0 ] || flunk "mvn test should not have been invoked in a gradle project"
+  rm output
+)
+
+(
   cd stack
   sh ../multi_test_runner.sh > output 2>&1
   [ `cat output | grep --count "Leaving GHCi"` == 1 ] || flunk "stack was not invoked"
