@@ -6,6 +6,7 @@ alias e='emacs -nw'
 alias ll='ls -lah'
 alias v='vi'
 alias rf='rm -rf'
+alias reme='cat README.md'
 
 # extra
 alias m='mpv'
