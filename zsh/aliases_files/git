@@ -27,5 +27,6 @@ alias gud='~/dotfiles/scripts/git_checkout_helper.sh'
 alias gc='~/dotfiles/scripts/git_commit_helper.sh'
 alias gbd='~/dotfiles/scripts/git_cli/git_branch_del.sh'
 alias gb='~/dotfiles/scripts/git_cli/git_list_branches.sh'
+alias vi='~/dotfiles/scripts/quick_edit.sh'
 
 alias del='~/dotfiles/scripts/delete_file_helper.sh'
