@@ -17,7 +17,7 @@ alias ggo='git pull origin HEAD --ff-only'
 alias glf='git lg'
 alias gl='git lg | head -n 10'
 
-alias gs='~/dotfiles/scripts/git_status_helper.sh'
+alias gs='if [ `git status -sb | wc -l` -ge 30 ]; then ~/dotfiles/scripts/git_status_helper.sh | pr -2 -t -w 150; else ~/dotfiles/scripts/git_status_helper.sh; fi'
 alias ga='~/dotfiles/scripts/git_add_helper.sh'
 alias gaa='git add .'
 alias gap='~/dotfiles/scripts/git_add_helper.sh -p'
