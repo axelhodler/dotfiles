@@ -107,3 +107,7 @@ map <Esc> :echo "use jj"<cr>
 
 " default filetype of json should not be js and thus makes validations work
 au BufRead,BufNewFile *.json set filetype=json
+
+call plug#begin()
+Plug 'elmcast/elm-vim'
+call plug#end()
