@@ -20,6 +20,10 @@ elif [[ "$2" == "." ]]; then
   git add -p .
 # check which files to add
 else
+  if [[ "$@" == "." ]]; then
+    git add .
+    exit 0
+  fi
   for filenumber in "$@"
   do
     if [[ $filenumber = "-p" ]]; then
