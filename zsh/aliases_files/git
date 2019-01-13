@@ -1,3 +1,4 @@
+alias ginit='git init && git add . && git commit -m "initial commit"'
 alias gco='git checkout'
 alias grhs='git reset HEAD~1 --soft'
 alias gcb='git checkout -b'
