@@ -2,6 +2,12 @@
 
 MAX_CHARACTERS=50
 
+if [[ -z "$1" ]]
+then
+  echo "No commit message supplied. Usage: gc commitmessage"
+  exit 1
+fi
+
 commit_msg="$@"
 
 branchname=$(git rev-parse --abbrev-ref HEAD)
