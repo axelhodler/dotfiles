@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 if [ -f stack.yaml ];
 then
   stack repl <<< test
