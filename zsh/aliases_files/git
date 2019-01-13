@@ -8,6 +8,10 @@ gcbf() {
   git checkout -b feature/$1
 }
 
+tcr() {
+  t && git commit -am $1 || git reset --hard
+}
+
 alias gib='git checkout -'
 alias gim='git merge --no-ff'
 alias giml='git merge --no-ff @{-1}'
