@@ -53,8 +53,10 @@ export GOPATH="$HOME/go"
 # rust
 export PATH="/Users/axel/.multirust/toolchains/stable/cargo/bin:$PATH"
 
-export NVM_DIR="/Users/axel/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# Node version manager `nvm use node` `nvm use --lts`
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 export EDITOR='vim'
 export VISUAL='vim'
+
