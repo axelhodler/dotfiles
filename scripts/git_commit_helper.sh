@@ -36,7 +36,12 @@ then
   git commit -m "$commit_msg"
 else
   chars_over_max=$(expr $used_characters - $MAX_CHARACTERS)
-  printf "The chosen commit message contains $chars_over_max chars too much.\nPlease choose a shorter message\n"
+  bold=$(tput bold)
+  normal=$(tput sgr0)
+  printf "Commit message contains ${bold}[$chars_over_max]${normal} chars too much.\nPlease choose a shorter message:\n"
+  fine_part=${commit_msg:0:$MAX_CHARACTERS}
+  bad_part=${commit_msg:$MAX_CHARACTERS}
+  printf "$fine_part${bold}$bad_part${normal}\n"
 fi
 
 ~/dotfiles/scripts/git_status_helper.sh
