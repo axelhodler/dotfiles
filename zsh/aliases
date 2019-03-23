@@ -19,6 +19,7 @@ alias ....='cd ../../..'
 
 # python
 alias python='python3'
+alias py='python3'
 
 # Virtual Environment stuff
 alias ve='source .env/bin/activate'
