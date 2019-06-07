@@ -54,8 +54,9 @@ export GOPATH="$HOME/go"
 export PATH="/Users/axel/.multirust/toolchains/stable/cargo/bin:$PATH"
 
 # Node version manager `nvm use node` `nvm use --lts`
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+# Quite slow, use if you do any node development
+# export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
 
 export EDITOR='vim'
 export VISUAL='vim'
