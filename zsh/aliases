@@ -16,6 +16,7 @@ alias getip='curl -s icanhazip.com'
 # directories
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias cpwd='pwd | pbcopy'
 
 # python
 alias python='python3'
