@@ -34,9 +34,13 @@ source ~/dotfiles/scripts/helper_functions.sh
 source ~/dotfiles/scripts/ethereum_helper_functions.sh
 
 # switch between versions
-# export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-# export JAVA_HOME=`/usr/libexec/java_home -v 9`
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
+
+# default to Java 11
+java11
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
