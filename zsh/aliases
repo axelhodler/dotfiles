@@ -39,6 +39,7 @@ alias beacons='ll /dev/tty.usbmodem*'
 alias cwd='pwd | pbcopy'
 alias psg='ps aux | grep -v grep | grep -i -e VSZ -e'
 alias t='~/dotfiles/scripts/multi_programming_envs/multi_test_runner.sh'
+alias act='bin/acceptance.sh'
 alias r='~/dotfiles/scripts/multi_programming_envs/multi_project_runner.sh'
 
 # find
@@ -62,4 +63,5 @@ function chpwd() {
 alias ip='ifconfig | grep inet | awk "NR==5{print \$2}"'
 alias uuid='uuidgen | xargs echo -n | pbcopy'
 alias idea='open -a "`ls -dt /Applications/IntelliJ\ IDEA*|head -1`"'
+alias charm='open -a "`ls -dt /Applications/PyCharm*|head -1`"'
 alias pstorm='open -a /Applications/PhpStorm.app/'
