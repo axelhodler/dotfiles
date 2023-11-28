@@ -4,8 +4,7 @@ Install [oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ```
 ln -s dotfiles/zsh/.zshrc
-cp zsh_custom/themes/axelhodler.zsh-theme ~/.oh-my-zsh/
-themes
+cp zsh_custom/themes/axelhodler.zsh-theme ~/.oh-my-zsh/themes
 ```
 
 # Git
