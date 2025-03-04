@@ -2,7 +2,7 @@
 
 files=()
 
-source ~/dotfiles/scripts/git_helper_statusreader.sh
+source ~/devel/github/axelhodler/dotfiles/scripts/git_helper_statusreader.sh
 
 patch=false
 
@@ -38,4 +38,4 @@ else
   done
 fi
 
-~/dotfiles/scripts/git_status_helper.sh
+~/devel/github/axelhodler/dotfiles/scripts/git_status_helper.sh

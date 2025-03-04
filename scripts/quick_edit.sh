@@ -4,9 +4,9 @@
 re='^[0-9]+$'
 
 if [ -f .gitignore ] && [[ $1 =~ $re ]]; then
-  source ~/dotfiles/scripts/git_helper_statusreader.sh
+  source ~/devel/github/axelhodler/dotfiles/scripts/git_helper_statusreader.sh
   vi ${files[$1]}
-  ~/dotfiles/scripts/git_status_helper.sh
+  ~/devel/github/axelhodler/dotfiles/scripts/git_status_helper.sh
 else
   vi $1
 fi

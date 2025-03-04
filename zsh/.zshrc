@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_CUSTOM=$HOME/dotfiles/zsh_custom
+ZSH_CUSTOM=$HOME/devel/github/axelhodler/dotfiles/zsh_custom
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/

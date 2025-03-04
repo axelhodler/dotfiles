@@ -44,4 +44,4 @@ else
   printf "$fine_part${bold}$bad_part${normal}\n"
 fi
 
-~/dotfiles/scripts/git_status_helper.sh
+~/devel/github/axelhodler/dotfiles/scripts/git_status_helper.sh

@@ -1,4 +1,4 @@
-source ~/dotfiles/zsh/aliases_files/git
+source ~/devel/github/axelhodler/dotfiles/zsh/aliases_files/git
 
 # shortened
 alias s='sudo'
